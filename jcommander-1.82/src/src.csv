@@ -1,0 +1,1339 @@
+Kind,Name,CountClassBase,CountClassCoupled,CountClassDerived,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountLineCode,Cyclomatic,MaxInheritanceTree,PercentLackOfCohesion
+File,"AlternateNamesForListArgs.java",,,,0,1,0,,8,,,
+File,"ArgMultiNameValidator.java",,,,1,1,1,,11,,,
+File,"Args1.java",,,,0,9,0,,26,,,
+File,"Args1Setter.java",,,,10,9,10,,56,,,
+File,"Args2.java",,,,0,5,0,,17,,,
+File,"ArgsArityInteger.java",,,,0,2,0,,9,,,
+File,"ArgsArityString.java",,,,0,2,0,,9,,,
+File,"ArgsBooleanArity.java",,,,0,1,0,,6,,,
+File,"ArgsBooleanArity0.java",,,,0,1,0,,6,,,
+File,"ArgsConverter.java",,,,0,9,0,,32,,,
+File,"ArgsConverterFactory.java",,,,0,1,0,,7,,,
+File,"ArgsDefault.java",,,,0,5,0,,16,,,
+File,"ArgsEnum.java",,,,2,5,3,,23,,,
+File,"ArgsEquals.java",,,,0,1,0,,8,,,
+File,"ArgsHelp.java",,,,0,1,0,,6,,,
+File,"ArgsI18N1.java",,,,0,1,0,,6,,,
+File,"ArgsI18N2.java",,,,0,1,0,,9,,,
+File,"ArgsI18N2New.java",,,,0,2,0,,11,,,
+File,"ArgsInherited.java",,,,0,1,0,,6,,,
+File,"ArgsList.java",,,,2,5,2,,36,,,
+File,"ArgsLongCommandDescription.java",,,,0,1,0,,10,,,
+File,"ArgsLongDescription.java",,,,0,5,0,,18,,,
+File,"ArgsLongMainParameterDescription.java",,,,0,2,0,,12,,,
+File,"ArgsMainParameter1.java",,,,1,1,1,,12,,,
+File,"ArgsMainParameter2.java",,,,1,1,1,,13,,,
+File,"ArgsMainParameter3.java",,,,2,1,2,,14,,,
+File,"ArgsMaster.java",,,,0,1,0,,6,,,
+File,"ArgsMultiValidate.java",,,,3,1,3,,30,,,
+File,"ArgsMultipleUnparsed.java",,,,0,2,0,,8,,,
+File,"ArgsOutOfMemory.java",,,,0,2,0,,10,,,
+File,"ArgsPassword.java",,,,0,1,0,,6,,,
+File,"ArgsPrivate.java",,,,1,1,1,,9,,,
+File,"ArgsRequired.java",,,,0,1,0,,8,,,
+File,"ArgsRequiredWrongMain.java",,,,0,1,0,,5,,,
+File,"ArgsSlave.java",,,,0,1,0,,6,,,
+File,"ArgsSlaveBogus.java",,,,0,1,0,,6,,,
+File,"ArgsValidate1.java",,,,0,1,0,,7,,,
+File,"ArgsValidate2.java",,,,1,1,1,,17,,,
+File,"ArgsWithSet.java",,,,0,1,0,,8,,,
+File,"Arity1.java",,,,0,1,0,,7,,,
+File,"BaseConverter.java",,,,3,1,3,,14,,,
+File,"BigDecimalConverter.java",,,,2,0,2,,15,,,
+File,"BooleanConverter.java",,,,2,0,2,,14,,,
+File,"CharArrayConverter.java",,,,1,0,1,,7,,,
+File,"CharArrayConverterTest.java",,,,1,0,1,,13,,,
+File,"CmdTest.java",,,,6,2,6,,86,,,
+File,"CommaParameterSplitter.java",,,,1,0,1,,8,,,
+File,"CommandAdd.java",,,,0,2,0,,11,,,
+File,"CommandAliasTest.java",,,,11,0,11,,126,,,
+File,"CommandCommit.java",,,,0,3,0,,13,,,
+File,"CommandHidden.java",,,,0,2,0,,11,,,
+File,"CommandLineArgs.java",,,,0,27,0,,68,,,
+File,"CommandLineArgs2.java",,,,0,15,0,,37,,,
+File,"CommandMain.java",,,,0,1,0,,6,,,
+File,"CommandNoParametersAnnotation.java",,,,0,1,0,,7,,,
+File,"CommandTest.java",,,,9,0,10,,121,,,
+File,"Console.java",,,,3,0,3,,6,,,
+File,"ConverterFactoryTest.java",,,,11,0,11,,81,,,
+File,"DSimple.java",,,,0,2,0,,10,,,
+File,"DSimpleBad.java",,,,0,1,0,,7,,,
+File,"DefaultConsole.java",,,,5,1,5,,32,,,
+File,"DefaultConsoleTest.java",,,,6,3,6,,53,,,
+File,"DefaultConverterFactory.java",,,,1,0,1,,52,,,
+File,"DefaultListConverter.java",,,,2,2,2,,20,,,
+File,"DefaultParameterizedParser.java",,,,1,0,1,,10,,,
+File,"DefaultProviderTest.java",,,,12,1,12,,95,,,
+File,"DefaultUsageFormatter.java",,,,12,1,15,,215,,,
+File,"DefaultUsageFormatterTest.java",,,,22,25,23,,314,,,
+File,"DefaultValueTest.java",,,,7,2,9,,79,,,
+File,"DoubleConverter.java",,,,2,0,2,,14,,,
+File,"DynamicParameter.java",,,,9,0,9,,19,,,
+File,"DynamicParameterTest.java",,,,7,0,8,,47,,,
+File,"EnumConverter.java",,,,2,2,2,,25,,,
+File,"EnvironmentVariableDefaultProvider.java",,,,4,2,4,,39,,,
+File,"EnvironmentVariableDefaultProviderTest.java",,,,1,0,1,,23,,,
+File,"FileConverter.java",,,,1,0,1,,8,,,
+File,"FinderTest.java",,,,7,8,8,,98,,,
+File,"FloatConverter.java",,,,2,0,2,,14,,,
+File,"FuzzyMap.java",,,,1,0,3,,48,,,
+File,"HiddenArgs.java",,,,2,2,2,,13,,,
+File,"HiddenConverter.java",,,,2,0,2,,9,,,
+File,"HiddenParameterSplitter.java",,,,1,0,1,,10,,,
+File,"HostPort.java",,,,1,2,1,,9,,,
+File,"HostPortConverter.java",,,,1,0,1,,10,,,
+File,"IDefaultProvider.java",,,,1,0,1,,4,,,
+File,"IHostPorts.java",,,,1,0,1,,6,,,
+File,"IParameterSplitter.java",,,,1,0,1,,5,,,
+File,"IParameterValidator.java",,,,1,0,1,,4,,,
+File,"IParameterValidator2.java",,,,1,0,1,,4,,,
+File,"IParameterizedParser.java",,,,1,0,1,,5,,,
+File,"ISO8601DateConverter.java",,,,2,0,2,,18,,,
+File,"IStringConverter.java",,,,1,0,1,,4,,,
+File,"IStringConverterFactory.java",,,,1,0,1,,4,,,
+File,"IStringConverterInstanceFactory.java",,,,1,0,1,,4,,,
+File,"IUsageFormatter.java",,,,6,0,6,,9,,,
+File,"IValueValidator.java",,,,1,0,1,,4,,,
+File,"IVariableArity.java",,,,1,0,1,,4,,,
+File,"InetAddressConverter.java",,,,1,0,1,,14,,,
+File,"InetAddressConverterTest.java",,,,6,0,6,,33,,,
+File,"IntegerConverter.java",,,,2,0,2,,14,,,
+File,"JCommander.java",,,,145,44,150,,1128,,,
+File,"JCommanderTest.java",,,,146,61,148,,1206,,,
+File,"JDK6Console.java",,,,4,2,4,,35,,,
+File,"JsonAnnotationParameterizedParser.java",,,,7,3,7,,64,,,
+File,"JsonCommandClassExample_01.java",,,,0,2,0,,17,,,
+File,"JsonCommandClassExample_02.java",,,,0,2,0,,14,,,
+File,"Lists.java",,,,0,0,6,,26,,,
+File,"LongConverter.java",,,,2,0,2,,14,,,
+File,"Maps.java",,,,0,0,3,,19,,,
+File,"MethodSetterTest.java",,,,11,4,12,,81,,,
+File,"MissingCommandException.java",,,,3,1,3,,15,,,
+File,"MyClass.java",,,,1,1,2,,17,,,
+File,"MyDelegate.java",,,,1,0,1,,10,,,
+File,"NamedCommandAdd.java",,,,0,2,0,,11,,,
+File,"NoConverter.java",,,,1,0,1,,7,,,
+File,"NoValidator.java",,,,1,0,1,,8,,,
+File,"NoValueValidator.java",,,,1,0,1,,8,,,
+File,"Nullable.java",,,,0,0,0,,9,,,
+File,"Parameter.java",,,,17,0,17,,32,,,
+File,"ParameterDescription.java",,,,35,13,35,,324,,,
+File,"ParameterException.java",,,,6,1,6,,25,,,
+File,"ParameterOrderTest.java",,,,4,10,4,,61,,,
+File,"Parameterized.java",,,,15,5,21,,250,,,
+File,"ParameterizedParserTest.java",,,,4,0,4,,58,,,
+File,"Parameters.java",,,,6,0,6,,16,,,
+File,"ParametersDelegate.java",,,,0,0,0,,8,,,
+File,"ParametersDelegateTest.java",,,,11,34,12,,212,,,
+File,"ParametersNotEmptyTest.java",,,,1,2,1,,30,,,
+File,"PasswordTest.java",,,,12,4,12,,91,,,
+File,"PathConverter.java",,,,2,0,3,,29,,,
+File,"PositiveInteger.java",,,,1,0,1,,13,,,
+File,"PositiveIntegerTest.java",,,,5,5,5,,55,,,
+File,"PropertyFileDefaultProvider.java",,,,4,1,4,,39,,,
+File,"QuotedMainTest.java",,,,1,2,2,,22,,,
+File,"ResourceBundle.java",,,,1,0,1,,9,,,
+File,"SeparatorColon.java",,,,0,1,0,,8,,,
+File,"SeparatorEqual.java",,,,0,2,0,,10,,,
+File,"SeparatorMixed.java",,,,0,2,0,,10,,,
+File,"SetConverter.java",,,,1,0,1,,13,,,
+File,"Sets.java",,,,0,0,2,,12,,,
+File,"SimpleExample.java",,,,4,3,5,,39,,,
+File,"SlashSeparator.java",,,,0,2,0,,10,,,
+File,"StandardCommandClassExample_01.java",,,,0,2,0,,14,,,
+File,"StandardCommandClassExample_02.java",,,,0,2,0,,16,,,
+File,"StringConverter.java",,,,1,0,1,,7,,,
+File,"StringKey.java",,,,5,1,5,,39,,,
+File,"Strings.java",,,,0,0,4,,32,,,
+File,"StringsTest.java",,,,3,0,3,,25,,,
+File,"SubParameter.java",,,,1,0,1,,10,,,
+File,"TypeHierarchyTest.java",,,,16,5,16,,82,,,
+File,"URIConverter.java",,,,2,0,2,,16,,,
+File,"URLConverter.java",,,,2,0,2,,17,,,
+File,"UnixStyleUsageFormatter.java",,,,2,0,2,,53,,,
+File,"UnixStyleUsageFormatterTest.java",,,,22,25,22,,313,,,
+File,"ValidatePropertiesWhenParsingTest.java",,,,2,2,3,,29,,,
+File,"VariableArity.java",,,,2,3,2,,18,,,
+File,"VariableArityTest.java",,,,2,5,3,,48,,,
+File,"WrappedParameter.java",,,,21,2,21,,100,,,
+Package,"com",,,,0,0,0,,0,,,
+Package,"com.beust",,,,0,0,0,,0,,,
+Package,"com.beust.jcommander",,,,607,272,639,,5495,,,
+Public Class,"com.beust.jcommander.ArgMultiNameValidator",1,3,0,0,1,0,0,10,,1,0
+Public Static Class,"com.beust.jcommander.ArgMultiNameValidator.MultiNameValidator",2,2,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.ArgMultiNameValidator.MultiNameValidator.validate",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.ArgsRequiredWrongMain",1,1,0,0,1,0,0,3,,1,0
+Public Class,"com.beust.jcommander.ArgsValidate2",1,5,0,0,1,0,0,14,,1,0
+Public Static Class,"com.beust.jcommander.ArgsValidate2.FailingValidator",2,3,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.ArgsValidate2.FailingValidator.validate",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.CmdTest",1,14,0,6,0,6,6,79,,1,0
+Public Static Class,"com.beust.jcommander.CmdTest.CmdOne",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.CmdTest.CmdTwo",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.CmdTest.parseArgs",,,,,,,,17,3,,
+Public Method,"com.beust.jcommander.CmdTest.testArgsWithDefaultCmd",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.CmdTest.testArgsWithoutDefaultCmd",,,,,,,,6,2,,
+Public Method,"com.beust.jcommander.CmdTest.testArgsWithoutDefaultCmdFail",,,,,,,,13,3,,
+Public Method,"com.beust.jcommander.CmdTest.testData",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.CmdTest.testIssue244",,,,,,,,15,1,,
+Class,"com.beust.jcommander.CmdTest.testIssue244.P1",1,0,0,0,0,0,0,1,,1,0
+Class,"com.beust.jcommander.CmdTest.testIssue244.P2",1,1,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.ConverterFactoryTest",1,13,0,7,0,7,7,71,,1,0
+Anonymous Class,"com.beust.jcommander.ConverterFactoryTest.(Anon_1)",1,2,0,0,0,0,0,2,,2,0
+Anonymous Class,"com.beust.jcommander.ConverterFactoryTest.(Anon_2)",2,2,0,1,0,1,1,4,,1,0
+Public Method,"com.beust.jcommander.ConverterFactoryTest.(Anon_2).getConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithFactory",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ConverterFactoryTest.mainWithHostPortParameters",,,,,,,,10,3,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithInstanceFactory",,,,,,,,8,1,,
+Anonymous Class,"com.beust.jcommander.ConverterFactoryTest.mainWithInstanceFactory.(Anon_3)",2,7,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithInstanceFactory.(Anon_3).getConverterInstance",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithSubcommand",,,,,,,,20,1,,
+Anonymous Class,"com.beust.jcommander.ConverterFactoryTest.mainWithSubcommand.(Anon_4)",2,6,0,1,0,1,1,12,,1,0
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithSubcommand.(Anon_4).getConverterInstance",,,,,,,,10,2,,
+Anonymous Class,"com.beust.jcommander.ConverterFactoryTest.mainWithSubcommand.(Anon_4).getConverterInstance.(Anon_5)",2,3,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithSubcommand.(Anon_4).getConverterInstance.(Anon_5).convert",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithoutConverterWithoutFactory",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.mainWithoutFactory",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ConverterFactoryTest.parameterWithHostPortParameters",,,,,,,,8,1,,
+Public Class,"com.beust.jcommander.DefaultProviderTest",1,8,0,10,0,10,10,90,,1,0
+Anonymous Class,"com.beust.jcommander.DefaultProviderTest.(Anon_1)",2,1,0,1,0,1,1,4,,1,0
+Public Method,"com.beust.jcommander.DefaultProviderTest.(Anon_1).getDefaultValueFor",,,,,,,,3,2,,
+Private Method,"com.beust.jcommander.DefaultProviderTest.defaultProvider",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.defaultProvider1",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.defaultProvider2",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.defaultProvider3",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.defaultProvider4",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.missingRequiredParameterWithDefaultValueProviderShouldNotRaiseParameterException",,,,,,,,16,1,,
+Anonymous Class,"com.beust.jcommander.DefaultProviderTest.missingRequiredParameterWithDefaultValueProviderShouldNotRaiseParameterException.(Anon_2)",2,1,0,1,0,1,1,4,,1,0
+Public Method,"com.beust.jcommander.DefaultProviderTest.missingRequiredParameterWithDefaultValueProviderShouldNotRaiseParameterException.(Anon_2).getDefaultValueFor",,,,,,,,3,2,,
+Class,"com.beust.jcommander.DefaultProviderTest.missingRequiredParameterWithDefaultValueProviderShouldNotRaiseParameterException.ArgsRequired",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.DefaultProviderTest.propertyFileDefaultProvider1",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.propertyFileDefaultProvider2",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.propertyFileDefaultProvider3",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.DefaultProviderTest.propertyFileDefaultProvider4",,,,,,,,7,1,,
+Public Class,"com.beust.jcommander.DefaultUsageFormatter",2,18,1,12,1,15,15,211,,1,46
+Public Constructor,"com.beust.jcommander.DefaultUsageFormatter.DefaultUsageFormatter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.appendAllParametersDetails",,,,,,,,53,14,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.appendCommands",,,,,,,,26,6,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.appendMainLine",,,,,,,,18,5,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.getCommandDescription",,,,,,,,26,6,,
+Public Static Method,"com.beust.jcommander.DefaultUsageFormatter.getI18nString",,,,,,,,4,3,,
+Private Static Method,"com.beust.jcommander.DefaultUsageFormatter.newLineAndIndent",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.DefaultUsageFormatter.s",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.usage",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.usage",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.usage",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.usage",,,,,,,,9,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.usage",,,,,,,,26,6,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.wrapDescription",,,,,,,,19,4,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatter.wrapDescription",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.DefaultUsageFormatterTest",1,33,0,18,0,19,19,306,,1,0
+Private Enum Type,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum1",1,1,0,2,4,2,2,3,,1,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum1.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum1.values",,,,,,,,0,1,,
+Private Enum Type,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum2",1,1,0,2,0,2,2,2,,1,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum2.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.TestEnum2.values",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.annotationsAndDynamicParameters",,,,,,,,12,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.annotationsAndDynamicParameters.DSimple",1,3,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.doNotDisplayHelpDefaultValue",,,,,,,,13,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.doNotDisplayHelpDefaultValue.Arg",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.dontShowOptionUsageIfThereAreNoOptions",,,,,,,,14,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.dontShowOptionUsageIfThereAreNoOptions.CommandTemplate",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.emptyStringAsDefault",,,,,,,,13,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.emptyStringAsDefault.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Static Method,"com.beust.jcommander.DefaultUsageFormatterTest.getResourceBundle",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.i18MissingKeyForCommand",,,,,,,,11,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.noParseConstructor",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.nonexistentCommandShouldThrow",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.oom",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.programName",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.testDescriptionWrappingLongWord",,,,,,,,10,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.testLongCommandDescription",,,,,,,,10,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.testLongMainParameterDescription",,,,,,,,10,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.testOutputFormat",,,,,,,,59,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.testOutputFormat.ArgsTemplate",1,3,0,0,10,0,0,22,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.usageCommandsUnderUsage",,,,,,,,23,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageCommandsUnderUsage.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageCommandsUnderUsage.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageCommandsUnderUsage.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.usageShouldNotChange",,,,,,,,11,1,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithEmptyLine",,,,,,,,23,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithEmptyLine.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithEmptyLine.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithEmptyLine.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithRequiredArgsAndResourceBundle",,,,,,,,15,2,,
+Public Method,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithSubCommands",,,,,,,,26,1,,
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithSubCommands.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithSubCommands.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.DefaultUsageFormatterTest.usageWithSubCommands.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.DefaultValueTest",1,12,0,5,0,7,7,71,,1,0
+Public Static Class,"com.beust.jcommander.DefaultValueTest.MyOpts",1,3,2,0,2,0,0,6,,1,0
+Public Static Class,"com.beust.jcommander.DefaultValueTest.MyOptsWithDefaultValues",1,1,0,1,0,1,1,6,,2,0
+Public Constructor,"com.beust.jcommander.DefaultValueTest.MyOptsWithDefaultValues.MyOptsWithDefaultValues",,,,,,,,4,1,,
+Public Static Class,"com.beust.jcommander.DefaultValueTest.MyOptsWithEmptyDefaults",1,2,0,1,0,1,1,6,,2,0
+Public Constructor,"com.beust.jcommander.DefaultValueTest.MyOptsWithEmptyDefaults.MyOptsWithEmptyDefaults",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.DefaultValueTest.anyNumberOfValuesCanBeSetToListParameters_ForEmptyDefaults",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.DefaultValueTest.anyNumberOfValuesCanBeSetToListParameters_ForNonEmptyDefaults",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.DefaultValueTest.defaultValueForListParametersGetsOverwrittenWithSpecifiedValueOrStaysAsDefaultOtherwise",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.DefaultValueTest.emptyDefaultValueForListParameterStaysEmptyIfNotAssignedOrIsSetOtherwise",,,,,,,,8,1,,
+Public Static Method,"com.beust.jcommander.DefaultValueTest.singletonList",,,,,,,,5,1,,
+Public Static Method,"com.beust.jcommander.DefaultValueTest.singletonSet",,,,,,,,5,1,,
+Private Method,"com.beust.jcommander.DefaultValueTest.testSettingMultipleValuesToListTypeParameters",,,,,,,,12,1,,
+Public Annotation,"com.beust.jcommander.DynamicParameter",0,3,0,9,0,9,9,11,,0,0
+Abstract Method,"com.beust.jcommander.DynamicParameter.assignment",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.description",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.descriptionKey",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.hidden",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.names",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.order",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.required",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.validateValueWith",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.DynamicParameter.validateWith",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.FinderTest",1,15,0,7,0,8,8,92,,1,0
+Public Method,"com.beust.jcommander.FinderTest.abbreviatedOptions",,,,,,,,11,1,,
+Class,"com.beust.jcommander.FinderTest.abbreviatedOptions.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.FinderTest.abbreviatedOptionsCaseInsensitive",,,,,,,,12,1,,
+Class,"com.beust.jcommander.FinderTest.abbreviatedOptionsCaseInsensitive.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.FinderTest.ambiguousAbbreviatedOptions",,,,,,,,13,1,,
+Class,"com.beust.jcommander.FinderTest.ambiguousAbbreviatedOptions.Arg",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.FinderTest.ambiguousAbbreviatedOptionsCaseInsensitive",,,,,,,,14,1,,
+Class,"com.beust.jcommander.FinderTest.ambiguousAbbreviatedOptionsCaseInsensitive.Arg",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.FinderTest.caseInsensitiveArguments",,,,,,,,13,1,,
+Class,"com.beust.jcommander.FinderTest.caseInsensitiveArguments.TestJobRunnerArgs",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.FinderTest.caseInsensitiveCommand",,,,,,,,10,1,,
+Public Method,"com.beust.jcommander.FinderTest.caseInsensitiveOption",,,,,,,,11,1,,
+Class,"com.beust.jcommander.FinderTest.caseInsensitiveOption.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Static Method,"com.beust.jcommander.FinderTest.main",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.FuzzyMap",1,5,0,0,0,2,2,45,,1,0
+Interface,"com.beust.jcommander.FuzzyMap.IKey",0,1,2,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.FuzzyMap.IKey.getName",,,,,,,,1,0,,
+Private Static Generic Method,"com.beust.jcommander.FuzzyMap.findAbbreviatedValue",,,,,,,,23,5,,
+TypeVariable,"com.beust.jcommander.FuzzyMap.findAbbreviatedValue.V",1,0,0,0,0,0,0,0,,1,0
+Public Static Generic Method,"com.beust.jcommander.FuzzyMap.findInMap",,,,,,,,17,5,,
+TypeVariable,"com.beust.jcommander.FuzzyMap.findInMap.V",1,0,0,0,0,0,0,0,,1,0
+Public Class,"com.beust.jcommander.HiddenConverter",2,2,0,2,0,2,2,8,,1,0
+Private Constructor,"com.beust.jcommander.HiddenConverter.HiddenConverter",,,,,,,,2,1,,
+Public Method,"com.beust.jcommander.HiddenConverter.convert",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.HiddenParameterSplitter",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.HiddenParameterSplitter.split",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.HostPort",1,3,0,1,2,1,1,8,,1,0
+Public Method,"com.beust.jcommander.HostPort.toString",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.HostPortConverter",2,2,0,1,0,1,1,8,,1,0
+Public Method,"com.beust.jcommander.HostPortConverter.convert",,,,,,,,7,1,,
+Public Interface,"com.beust.jcommander.IDefaultProvider",0,1,4,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IDefaultProvider.getDefaultValueFor",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IParameterValidator",0,2,7,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IParameterValidator.validate",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IParameterValidator2",1,3,1,1,0,1,2,3,,1,0
+Abstract Method,"com.beust.jcommander.IParameterValidator2.validate",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IParameterizedParser",0,1,2,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IParameterizedParser.parseArg",,,,,,,,1,0,,
+Public Generic Interface,"com.beust.jcommander.IStringConverter",0,1,14,1,0,1,1,3,,0,0
+TypeVariable,"com.beust.jcommander.IStringConverter.T",1,0,0,0,0,0,0,0,,1,0
+Abstract Method,"com.beust.jcommander.IStringConverter.convert",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IStringConverterFactory",0,1,2,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IStringConverterFactory.getConverter",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IStringConverterInstanceFactory",0,4,3,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IStringConverterInstanceFactory.getConverterInstance",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IUsageFormatter",0,2,1,6,0,6,6,8,,0,0
+Abstract Method,"com.beust.jcommander.IUsageFormatter.getCommandDescription",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.IUsageFormatter.usage",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.IUsageFormatter.usage",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.IUsageFormatter.usage",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.IUsageFormatter.usage",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.IUsageFormatter.usage",,,,,,,,1,0,,
+Public Generic Interface,"com.beust.jcommander.IValueValidator",0,2,6,1,0,1,1,3,,0,0
+TypeVariable,"com.beust.jcommander.IValueValidator.T",1,0,0,0,0,0,0,0,,1,0
+Abstract Method,"com.beust.jcommander.IValueValidator.validate",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.IVariableArity",0,1,2,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.IVariableArity.processVariableArity",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.JCommander",1,59,0,90,19,92,92,1114,,1,94
+Public Static Class,"com.beust.jcommander.JCommander.Builder",1,10,0,20,2,20,20,84,,1,50
+Public Constructor,"com.beust.jcommander.JCommander.Builder.Builder",,,,,,,,2,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.acceptUnknownOptions",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.addCommand",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.addCommand",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.addConverterFactory",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.addConverterInstanceFactory",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.addObject",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.allowAbbreviatedOptions",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.allowParameterOverwriting",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.args",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.atFileCharset",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.build",,,,,,,,6,2,,
+Public Method,"com.beust.jcommander.JCommander.Builder.columnSize",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.console",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.defaultProvider",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.expandAtSign",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.programName",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.resourceBundle",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.usageFormatter",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Builder.verbose",,,,,,,,4,1,,
+Private Class,"com.beust.jcommander.JCommander.DefaultVariableArity",2,3,0,1,0,1,1,10,,1,0
+Public Method,"com.beust.jcommander.JCommander.DefaultVariableArity.processVariableArity",,,,,,,,7,2,,
+Public Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,11,3,,
+Private Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,9,3,,
+Public Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.JCommander.JCommander",,,,,,,,4,1,,
+Public Static Class,"com.beust.jcommander.JCommander.Jcommander",1,17,0,2,1,2,2,100,,1,0
+Public Static Class,"com.beust.jcommander.JCommander.Jcommander",1,25,0,21,1,24,24,146,,1,37
+Public Constructor,"com.beust.jcommander.JCommander.Jcommander.Jcommander",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.JCommander.Jcommander.Jcommander",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.addCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.addCommand",,,,,,,,11,3,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.addCommand",,,,,,,,22,4,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.determineArity",,,,,,,,8,2,,
+Private Method,"com.beust.jcommander.JCommander.Jcommander.findCommand",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.findParameterDescription",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.findProgramName",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getCommands",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getObjects",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getParsedAlias",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getParsedCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getRawCommands",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.getUnknownOptions",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.JCommander.Jcommander.instantiateConverter",,,,,,,,20,6,,
+TypeVariable,"com.beust.jcommander.JCommander.Jcommander.instantiateConverter.T",1,0,0,0,0,0,0,0,,1,0
+Public Method,"com.beust.jcommander.JCommander.Jcommander.isBooleanType",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.JCommander.Jcommander.newBuilder",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.Jcommander.parse",,,,,,,,94,22,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.s",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.setAcceptUnknownOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.setAllowAbbreviatedOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.setCaseSensitiveOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.setVerbose",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.Jcommander.subArray",,,,,,,,6,1,,
+Public Static Method,"com.beust.jcommander.JCommander.Jcommander.trim",,,,,,,,7,2,,
+Static Class,"com.beust.jcommander.JCommander.MainParameter",1,5,0,2,7,2,2,23,,1,64
+Public Method,"com.beust.jcommander.JCommander.MainParameter.addValue",,,,,,,,11,3,,
+Public Method,"com.beust.jcommander.JCommander.MainParameter.getDescription",,,,,,,,3,1,,
+Private Static Class,"com.beust.jcommander.JCommander.Options",1,6,0,0,12,0,0,30,,1,0
+Anonymous Class,"com.beust.jcommander.JCommander.Options.(Anon_1)",1,3,0,1,0,1,1,15,,2,0
+Public Method,"com.beust.jcommander.JCommander.Options.(Anon_1).compare",,,,,,,,13,4,,
+Public Static Class,"com.beust.jcommander.JCommander.ProgramName",2,5,0,6,2,6,6,55,,1,41
+Constructor,"com.beust.jcommander.JCommander.ProgramName.ProgramName",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommander.ProgramName.equals",,,,,,,,15,7,,
+Public Method,"com.beust.jcommander.JCommander.ProgramName.getDisplayName",,,,,,,,16,4,,
+Public Method,"com.beust.jcommander.JCommander.ProgramName.getName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.ProgramName.hashCode",,,,,,,,6,2,,
+Public Method,"com.beust.jcommander.JCommander.ProgramName.toString",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.addCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.addCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.addCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.addConverterFactory",,,,,,,,17,1,,
+Anonymous Class,"com.beust.jcommander.JCommander.addConverterFactory.(Anon_2)",2,11,0,1,0,1,1,14,,1,0
+Public Method,"com.beust.jcommander.JCommander.addConverterFactory.(Anon_2).getConverterInstance",,,,,,,,11,5,,
+Public Method,"com.beust.jcommander.JCommander.addConverterInstanceFactory",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.addDescription",,,,,,,,56,14,,
+Public Method,"com.beust.jcommander.JCommander.addObject",,,,,,,,13,5,,
+Public Method,"com.beust.jcommander.JCommander.convertValue",,,,,,,,34,10,,
+Anonymous Class,"com.beust.jcommander.JCommander.convertValue.(Anon_3)",2,6,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.JCommander.convertValue.(Anon_3).convert",,,,,,,,4,2,,
+Public Method,"com.beust.jcommander.JCommander.createDescriptions",,,,,,,,6,2,,
+Private Method,"com.beust.jcommander.JCommander.determineArity",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.expandArgs",,,,,,,,29,7,,
+Private Method,"com.beust.jcommander.JCommander.expandDynamicArg",,,,,,,,12,5,,
+Private Method,"com.beust.jcommander.JCommander.findCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.findCommandByAlias",,,,,,,,13,3,,
+Private Method,"com.beust.jcommander.JCommander.findConverterInstance",,,,,,,,7,3,,
+Private Method,"com.beust.jcommander.JCommander.findParameterDescription",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.findProgramName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getAliasMap",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getBundle",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getColumnSize",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getCommands",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getCommands",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getConsole",,,,,,,,12,3,,
+Private Method,"com.beust.jcommander.JCommander.getDescriptionFor",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getDescriptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getFields",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getMainParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getMainParameterDescription",,,,,,,,5,3,,
+Public Method,"com.beust.jcommander.JCommander.getMainParameterValue",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getObjects",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getObjects",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParameterDescriptionComparator",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParameters",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParsedAlias",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParsedAlias",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParsedCommand",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getParsedCommand",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.getPrefixDescriptionFor",,,,,,,,6,3,,
+Public Method,"com.beust.jcommander.JCommander.getProgramDisplayName",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.JCommander.getProgramName",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.JCommander.getRawCommands",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.getSeparatorFor",,,,,,,,8,3,,
+Public Method,"com.beust.jcommander.JCommander.getUnknownArgs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getUnknownOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.getUsageFormatter",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.handleBooleanOption",,,,,,,,9,4,,
+Private Method,"com.beust.jcommander.JCommander.initMainParameterValue",,,,,,,,22,5,,
+Private Method,"com.beust.jcommander.JCommander.initializeDefaultValue",,,,,,,,11,3,,
+Private Method,"com.beust.jcommander.JCommander.initializeDefaultValues",,,,,,,,10,4,,
+Private Method,"com.beust.jcommander.JCommander.isBooleanType",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.isOption",,,,,,,,11,7,,
+Public Method,"com.beust.jcommander.JCommander.isParameterOverwritingAllowed",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.matchArg",,,,,,,,21,9,,
+Private Method,"com.beust.jcommander.JCommander.p",,,,,,,,5,2,,
+Public Method,"com.beust.jcommander.JCommander.parse",,,,,,,,8,2,,
+Private Method,"com.beust.jcommander.JCommander.parse",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.parseWithoutValidation",,,,,,,,3,1,,
+Private Static Method,"com.beust.jcommander.JCommander.pluralize",,,,,,,,3,2,,
+Private Method,"com.beust.jcommander.JCommander.processFixedArity",,,,,,,,6,2,,
+Private Method,"com.beust.jcommander.JCommander.processFixedArity",,,,,,,,29,8,,
+Private Method,"com.beust.jcommander.JCommander.processPassword",,,,,,,,13,3,,
+Private Method,"com.beust.jcommander.JCommander.processVariableArity",,,,,,,,12,2,,
+Private Method,"com.beust.jcommander.JCommander.readFile",,,,,,,,14,4,,
+Private Method,"com.beust.jcommander.JCommander.readPassword",,,,,,,,4,1,,
+Private Method,"com.beust.jcommander.JCommander.s",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setAcceptUnknownOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setAllowAbbreviatedOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setAllowParameterOverwriting",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setAtFileCharset",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setCaseSensitiveOptions",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setColumnSize",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setConsole",,,,,,,,1,1,,
+Public Method,"com.beust.jcommander.JCommander.setDefaultProvider",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setDescriptionsBundle",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setExpandAtSign",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setParameterDescriptionComparator",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setParameterizedParser",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setProgramName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setProgramName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommander.setUsageFormatter",,,,,,,,5,2,,
+Public Method,"com.beust.jcommander.JCommander.setVerbose",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommander.subArray",,,,,,,,3,1,,
+Private Static Generic Method,"com.beust.jcommander.JCommander.tryInstantiateConverter",,,,,,,,10,3,,
+TypeVariable,"com.beust.jcommander.JCommander.tryInstantiateConverter.T",1,0,0,0,0,0,0,0,,1,0
+Public Method,"com.beust.jcommander.JCommander.usage",,,,,,,,5,1,,
+Private Method,"com.beust.jcommander.JCommander.validateOptions",,,,,,,,34,9,,
+Public Class,"com.beust.jcommander.JCommanderTest",1,99,0,106,1,108,108,1185,,1,75
+Public Static Class,"com.beust.jcommander.JCommanderTest.BaseArgs",1,1,0,0,2,0,0,6,,1,0
+Enum Type,"com.beust.jcommander.JCommanderTest.Color",1,1,0,2,2,2,2,3,,1,
+Public Method,"com.beust.jcommander.JCommanderTest.Color.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.Color.values",,,,,,,,0,1,,
+Static Class,"com.beust.jcommander.JCommanderTest.CommandTemplate",1,3,0,0,2,0,0,6,,1,0
+Public Static Class,"com.beust.jcommander.JCommanderTest.ConfigureArgs",1,0,0,0,0,0,0,2,,1,0
+Public Static Class,"com.beust.jcommander.JCommanderTest.Help",1,4,0,0,1,0,0,5,,1,0
+Public Static Class,"com.beust.jcommander.JCommanderTest.JcommanderTest",1,28,0,30,0,30,30,203,,1,0
+Public Constructor,"com.beust.jcommander.JCommanderTest.JcommanderTest.JcommanderTest",,,,,,,,2,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.alternateNamesListArgs",,,,,,,,9,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.argsBoolean0",,,,,,,,5,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.argsBoolean1",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.arity2Fail",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.arityString",,,,,,,,10,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.badParameterShouldThrowParameter1Exception",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.badParameterShouldThrowParameter2Exception",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.booleanArity0",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.booleanArity1",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.booleanNoDefault",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.JcommanderTest.booleanNoDefault.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.finalArgs",,,,,,,,7,1,,
+Anonymous Class,"com.beust.jcommander.JCommanderTest.JcommanderTest.finalArgs.(Anon_2)",1,1,0,0,1,0,0,3,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.hiddenArgs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.hiddenConverter",,,,,,,,7,1,,
+Class,"com.beust.jcommander.JCommanderTest.JcommanderTest.hiddenConverter.Args",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.hiddenSplitter",,,,,,,,12,2,,
+Class,"com.beust.jcommander.JCommanderTest.JcommanderTest.hiddenSplitter.Args",1,3,0,0,1,0,0,4,,1,0
+Private Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.i18n1",,,,,,,,9,2,,
+Private Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.i18n2",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.i18nNoLocale",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.invertedBoolean",,,,,,,,12,1,,
+Class,"com.beust.jcommander.JCommanderTest.JcommanderTest.invertedBoolean.Args",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multiObjects",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multiObjectsWithDuplicatesFail",,,,,,,,6,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multipleNames",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multipleNames1",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multipleNames2",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.multipleUnparsedFail",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.pathConverterErr",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.privateArgs",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.repeatedArgs",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.requiredFields1Fail",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.JcommanderTest.testAlternateNamesForListParameters",,,,,,,,8,1,,
+Static Class,"com.beust.jcommander.JCommanderTest.MvParameters",1,2,0,0,2,0,0,6,,1,0
+Static Class,"com.beust.jcommander.JCommanderTest.V2",2,7,0,2,0,2,2,13,,1,50
+Public Method,"com.beust.jcommander.JCommanderTest.V2.validate",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.V2.validate",,,,,,,,4,1,,
+Static Class,"com.beust.jcommander.JCommanderTest.ValuesValidator",2,5,0,1,0,1,1,12,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.ValuesValidator.validate",,,,,,,,9,3,,
+Public Method,"com.beust.jcommander.JCommanderTest.access",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.access.Parameters",1,2,0,1,2,1,1,9,,1,50
+Private Method,"com.beust.jcommander.JCommanderTest.access.Parameters.setBar",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.argsBoolean0",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.argsBoolean1",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.arity",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.arity.Parameters",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.arity1Fail",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.arity1Success1",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.arity1Success2",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.arity2Fail",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.arityString",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.atFileCanContainEmptyLines",,,,,,,,10,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.atFileWithInNonDefaultCharset",,,,,,,,24,3,,
+Public Method,"com.beust.jcommander.JCommanderTest.badParameterShouldThrowParameter1Exception",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.badParameterShouldThrowParameter2Exception",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.booleanArity0",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.booleanArity1",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.booleanNoDefault",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.commandKey",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.commandKey.Args",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.commandsShouldBeShownInOrderOfInsertion",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.commandsWithSamePrefixAsOptionsShouldWork",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.commitTest",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.dashDashDashDash",,,,,,,,10,1,,
+Class,"com.beust.jcommander.JCommanderTest.dashDashDashDash.Parameters",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.dashDashEmpty",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.dashDashEmpty.Parameters",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.dashDashParameter",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.dashDashParameter.Parameters",1,3,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.dashDashParameter2",,,,,,,,17,1,,
+Class,"com.beust.jcommander.JCommanderTest.dashDashParameter2.Parameters",1,3,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.disabledAtSignExpansionTest",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.disabledAtSignExpansionTest.Params",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.doubleQuotedStringShouldBeConsideredAsParameter",,,,,,,,10,1,,
+Class,"com.beust.jcommander.JCommanderTest.doubleQuotedStringShouldBeConsideredAsParameter.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.duplicateParameterNames",,,,,,,,16,1,,
+Class,"com.beust.jcommander.JCommanderTest.duplicateParameterNames.Arg1",1,0,0,0,0,0,0,2,,2,0
+Class,"com.beust.jcommander.JCommanderTest.duplicateParameterNames.Arg2",1,0,0,0,0,0,0,2,,2,0
+Class,"com.beust.jcommander.JCommanderTest.duplicateParameterNames.ArgBase",1,2,2,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.dynamicParameters",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.dynamicParameters.Command",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.emptyStringShouldBeConsideredAsParameter",,,,,,,,10,1,,
+Class,"com.beust.jcommander.JCommanderTest.emptyStringShouldBeConsideredAsParameter.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.enabledAtSignExpansionTest",,,,,,,,10,1,,
+Class,"com.beust.jcommander.JCommanderTest.enabledAtSignExpansionTest.Params",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.enumArgs",,,,,,,,17,3,,
+Public Method,"com.beust.jcommander.JCommanderTest.enumArgs2",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.enumArgsCaseInsensitive",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.enumArgsFail",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.enumConverter",,,,,,,,19,1,,
+Class,"com.beust.jcommander.JCommanderTest.enumConverter.Arg",1,3,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.JCommanderTest.enumConverter.ColorEnumConverter",1,4,0,2,0,2,4,9,,2,0
+Public Constructor,"com.beust.jcommander.JCommanderTest.enumConverter.ColorEnumConverter.ColorEnumConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.enumConverter.ColorEnumConverter.convert",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.equalSeparator",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.equalSeparator.MyClass",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.exeParser",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.exeParser.Params",1,2,0,0,1,0,0,4,,1,0
+Public Static Method,"com.beust.jcommander.JCommanderTest.f",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.finalArgs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.getParametersShouldNotNpe",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.handleEqualSigns",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.handleSets",,,,,,,,9,1,,
+Anonymous Class,"com.beust.jcommander.JCommanderTest.handleSets.(Anon_1)",1,0,0,0,0,0,0,4,,2,0
+Public Method,"com.beust.jcommander.JCommanderTest.helpTest",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.helpTest.Arg",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.hiddenArgs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.hiddenConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.hiddenSplitter",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.i18n1",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.i18n2",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.i18nFrLocale",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.i18nNoLocale",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.i18nUsLocale",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.i18nWithResourceAnnotation",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.i18nWithResourceAnnotationNew",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.inheritance",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.invertedBoolean",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.issue",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.issue.Parameters",1,3,0,0,1,0,0,7,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.listArgShouldBeCleared",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.listArgShouldBeCleared.Args",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.listParameters",,,,,,,,9,1,,
+Public Static Method,"com.beust.jcommander.JCommanderTest.main",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterShouldBeValidate",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.mainParameterShouldBeValidate.A",1,3,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.JCommanderTest.mainParameterShouldBeValidate.V",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterShouldBeValidate.V.validate",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterWithCorrectArity",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.mainParameterWithCorrectArity.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterWithNonListField",,,,,,,,12,1,,
+Class,"com.beust.jcommander.JCommanderTest.mainParameterWithNonListField.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterWithNonListFieldWithException",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.mainParameterWithNonListFieldWithException.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.mainParameterWithWrongArity",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.mainParameterWithWrongArity.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.mainWithConverter",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.multiObjects",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.multiObjectsWithDuplicatesFail",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.multiVariableArityList",,,,,,,,22,1,,
+Class,"com.beust.jcommander.JCommanderTest.multiVariableArityList.Params",1,3,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.multipleParameterNames",,,,,,,,7,1,,
+Class,"com.beust.jcommander.JCommanderTest.multipleParameterNames.MultipleParameterNames",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.multipleUnparsedFail",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.multipleValidators",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.JCommanderTest.multipleValidatorsFails1",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.multipleValidatorsFails2",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.negativeNumber",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.noDash",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.noDash.Parameters",1,2,0,1,2,1,1,9,,1,50
+Private Method,"com.beust.jcommander.JCommanderTest.noDash.Parameters.setBar",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.noDashCommand",,,,,,,,11,1,,
+Class,"com.beust.jcommander.JCommanderTest.noDashCommand.P1",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.parameterWithOneDoubleQuote",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.parameterWithOneDoubleQuote.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.partialValidation",,,,,,,,13,1,,
+Class,"com.beust.jcommander.JCommanderTest.partialValidation.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.pathConverterErr",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.privateArgs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.requiredMainParameters",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.separatorBoth",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.separatorColon",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.separatorEqual",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.separatorMixed1",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.shouldThrowIfUnknownOption",,,,,,,,8,1,,
+Class,"com.beust.jcommander.JCommanderTest.shouldThrowIfUnknownOption.A",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.slashParameters",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.spaces",,,,,,,,9,1,,
+Class,"com.beust.jcommander.JCommanderTest.spaces.Arg",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.testCustomListConverter",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.testDefaultListConverterForStandardType",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.testDefaultListConverterForString",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.testDefaultListConverterWithCustomConverterAndDefaultSplitter",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.testDefaultListConverterWithCustomConverterAndSplitter",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.tmp",,,,,,,,7,1,,
+Class,"com.beust.jcommander.JCommanderTest.tmp.A",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.trimTest",,,,,,,,12,1,,
+Class,"com.beust.jcommander.JCommanderTest.trimTest.Args",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.twoCommandsSameOption",,,,,,,,18,1,,
+Class,"com.beust.jcommander.JCommanderTest.twoCommandsSameOption.GenerateOption",1,3,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.JCommanderTest.twoCommandsSameOption.RegenerateOption",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.unknownOptionWithDifferentPrefix",,,,,,,,16,2,,
+Class,"com.beust.jcommander.JCommanderTest.unknownOptionWithDifferentPrefix.SlashSeparator",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.validationShouldReceiveRightParameterName",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.validationShouldWork1",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.validationShouldWork2",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.validationShouldWorkWithDefaultValues",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.validator2",,,,,,,,14,1,,
+Class,"com.beust.jcommander.JCommanderTest.validator2.Arg",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.variable",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.variableArity",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.JCommanderTest.variableArityZeroNonBoolean",,,,,,,,4,1,,
+Private Method,"com.beust.jcommander.JCommanderTest.verifyCommandOrdering",,,,,,,,13,3,,
+Public Method,"com.beust.jcommander.JCommanderTest.verifyHelp",,,,,,,,12,1,,
+Class,"com.beust.jcommander.JCommanderTest.verifyHelp.Arg",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.JCommanderTest.wrongMainTypeShouldThrow",,,,,,,,4,1,,
+Class,"com.beust.jcommander.Main",1,4,0,1,2,2,2,15,,1,50
+Public Static Method,"com.beust.jcommander.Main.main",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.Main.run",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.MethodSetterTest",1,11,0,4,0,5,5,76,,1,0
+Public Method,"com.beust.jcommander.MethodSetterTest.arityStringsSetter",,,,,,,,25,1,,
+Class,"com.beust.jcommander.MethodSetterTest.arityStringsSetter.ArgsArityStringSetter",1,2,0,3,2,3,3,15,,1,100
+Public Method,"com.beust.jcommander.MethodSetterTest.arityStringsSetter.ArgsArityStringSetter.getPairs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.arityStringsSetter.ArgsArityStringSetter.setPairs",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.arityStringsSetter.ArgsArityStringSetter.setRest",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.getterReturningNonString",,,,,,,,15,1,,
+Class,"com.beust.jcommander.MethodSetterTest.getterReturningNonString.Arg",1,3,0,2,1,2,2,10,,1,0
+Public Method,"com.beust.jcommander.MethodSetterTest.getterReturningNonString.Arg.getPort",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.getterReturningNonString.Arg.setPort",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.MethodSetterTest.main",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.noGetterButWithField",,,,,,,,14,1,,
+Class,"com.beust.jcommander.MethodSetterTest.noGetterButWithField.Arg",1,3,0,1,1,1,1,7,,1,0
+Public Method,"com.beust.jcommander.MethodSetterTest.noGetterButWithField.Arg.setPort",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MethodSetterTest.setterThatThrows",,,,,,,,16,2,,
+Class,"com.beust.jcommander.MethodSetterTest.setterThatThrows.Arg",1,3,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.MethodSetterTest.setterThatThrows.Arg.setHost",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.MissingCommandException",1,1,0,3,1,3,9,13,,3,33
+Public Constructor,"com.beust.jcommander.MissingCommandException.MissingCommandException",,,,,,,,4,1,,
+Public Constructor,"com.beust.jcommander.MissingCommandException.MissingCommandException",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.MissingCommandException.getUnknownCommand",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.MyClass",1,4,0,0,1,1,1,13,,1,100
+Public Static Class,"com.beust.jcommander.MyClass.MyValidator",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.MyClass.MyValidator.validate",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.MyClass.main",,,,,,,,4,1,,
+Public Annotation,"com.beust.jcommander.Parameter",0,6,0,17,0,17,17,20,,0,0
+Abstract Method,"com.beust.jcommander.Parameter.arity",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.converter",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.description",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.descriptionKey",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.echoInput",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.forceNonOverwritable",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.help",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.hidden",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.listConverter",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.names",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.order",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.password",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.required",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.splitter",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.validateValueWith",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.validateWith",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameter.variableArity",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.ParameterDescription",1,32,0,34,11,34,34,317,,1,88
+Public Constructor,"com.beust.jcommander.ParameterDescription.ParameterDescription",,,,,,,,6,1,,
+Public Constructor,"com.beust.jcommander.ParameterDescription.ParameterDescription",,,,,,,,12,2,,
+Class,"com.beust.jcommander.ParameterDescription.SubParameterIndex",1,1,0,1,2,1,1,8,,1,0
+Public Constructor,"com.beust.jcommander.ParameterDescription.SubParameterIndex.SubParameterIndex",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.addValue",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.addValue",,,,,,,,3,1,,
+Method,"com.beust.jcommander.ParameterDescription.addValue",,,,,,,,45,11,,
+Private Method,"com.beust.jcommander.ParameterDescription.fieldIsSetForTheFirstTime",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.findResourceBundle",,,,,,,,14,3,,
+Private Method,"com.beust.jcommander.ParameterDescription.findSubParameters",,,,,,,,11,3,,
+Public Method,"com.beust.jcommander.ParameterDescription.getDefault",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getDescription",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getLongestName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getNames",,,,,,,,9,3,,
+Public Method,"com.beust.jcommander.ParameterDescription.getObject",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getParameterAnnotation",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.getParameterized",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.handleSubParameters",,,,,,,,27,6,,
+Private Method,"com.beust.jcommander.ParameterDescription.init",,,,,,,,36,8,,
+Private Method,"com.beust.jcommander.ParameterDescription.initDescription",,,,,,,,11,5,,
+Public Method,"com.beust.jcommander.ParameterDescription.isAssigned",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.isDynamicParameter",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.isEmpty",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.isHelp",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.isMultiOption",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.isNonOverwritableForced",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.newCollection",,,,,,,,10,5,,
+Private Method,"com.beust.jcommander.ParameterDescription.p",,,,,,,,5,2,,
+Public Method,"com.beust.jcommander.ParameterDescription.setAssigned",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterDescription.toString",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.ParameterDescription.validateDefaultValues",,,,,,,,4,2,,
+Public Method,"com.beust.jcommander.ParameterDescription.validateParameter",,,,,,,,19,6,,
+Private Method,"com.beust.jcommander.ParameterDescription.validateParameter",,,,,,,,8,3,,
+Method,"com.beust.jcommander.ParameterDescription.validateValueParameter",,,,,,,,8,3,,
+Public Method,"com.beust.jcommander.ParameterDescription.validateValueParameter",,,,,,,,11,3,,
+Public Class,"com.beust.jcommander.ParameterException",1,3,1,6,1,6,6,23,,2,50
+Public Constructor,"com.beust.jcommander.ParameterException.ParameterException",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.ParameterException.ParameterException",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.ParameterException.ParameterException",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterException.getJCommander",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterException.setJCommander",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterException.usage",,,,,,,,5,2,,
+Public Class,"com.beust.jcommander.ParameterOrderTest",1,12,0,4,0,4,4,54,,1,0
+Private Static Class,"com.beust.jcommander.ParameterOrderTest.ManualOrder1",1,1,0,0,3,0,0,8,,1,0
+Private Static Class,"com.beust.jcommander.ParameterOrderTest.ManualOrder2",1,3,0,0,3,0,0,8,,1,0
+Private Static Class,"com.beust.jcommander.ParameterOrderTest.ManualOrder3",1,1,0,0,4,0,0,10,,1,0
+Public Method,"com.beust.jcommander.ParameterOrderTest.testOrder",,,,,,,,14,3,,
+Public Method,"com.beust.jcommander.ParameterOrderTest.testOrder1",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterOrderTest.testOrder2",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParameterOrderTest.testOrder3",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.Parameterized",1,25,0,15,5,21,21,242,,1,72
+Public Constructor,"com.beust.jcommander.Parameterized.Parameterized",,,,,,,,14,3,,
+Private Static Method,"com.beust.jcommander.Parameterized.describeClassTree",,,,,,,,13,4,,
+Private Static Method,"com.beust.jcommander.Parameterized.describeClassTree",,,,,,,,8,2,,
+Public Method,"com.beust.jcommander.Parameterized.equals",,,,,,,,20,10,,
+Private Static Method,"com.beust.jcommander.Parameterized.errorMessage",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.Parameterized.findFieldGenericType",,,,,,,,22,7,,
+Public Method,"com.beust.jcommander.Parameterized.get",,,,,,,,27,7,,
+Public Method,"com.beust.jcommander.Parameterized.getDelegateAnnotation",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.Parameterized.getGenericType",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.Parameterized.getName",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.Parameterized.getParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.Parameterized.getType",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.Parameterized.getWrappedParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.Parameterized.hashCode",,,,,,,,7,3,,
+Public Method,"com.beust.jcommander.Parameterized.isDynamicParameter",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.Parameterized.isDynamicParameter",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.Parameterized.parseArg",,,,,,,,39,10,,
+Public Method,"com.beust.jcommander.Parameterized.set",,,,,,,,17,5,,
+Private Static Method,"com.beust.jcommander.Parameterized.setFieldAccessible",,,,,,,,8,2,,
+Private Static Method,"com.beust.jcommander.Parameterized.setFieldAccessibleWithoutFinalCheck",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.Parameterized.setGetter",,,,,,,,12,3,,
+Public Annotation,"com.beust.jcommander.Parameters",0,1,0,6,0,6,6,8,,0,0
+Abstract Method,"com.beust.jcommander.Parameters.commandDescription",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameters.commandDescriptionKey",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameters.commandNames",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameters.hidden",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameters.resourceBundle",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.Parameters.separators",,,,,,,,1,0,,
+Public Annotation,"com.beust.jcommander.ParametersDelegate",0,0,0,0,0,0,0,2,,0,0
+Public Class,"com.beust.jcommander.ParametersDelegateTest",1,22,0,9,0,10,10,207,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates",,,,,,,,56,1,,
+Anonymous Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.(Anon_3)",1,0,0,0,0,0,0,3,,2,0
+Abstract Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.LeafAbstractDelegate",1,0,1,1,0,1,1,3,,1,0
+Abstract Method,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.LeafAbstractDelegate.getFloat",,,,,,,,1,0,,
+Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.LeafDelegate",1,2,0,0,2,0,0,9,,1,0
+Anonymous Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.LeafDelegate.(Anon_1)",1,0,0,0,0,0,0,3,,2,0
+Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.MainParams",1,4,0,0,3,0,0,8,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.NestedDelegate1",1,4,0,0,2,0,0,6,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.NestedDelegate2",1,4,0,0,3,0,0,15,,1,0
+Anonymous Class,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.NestedDelegate2.(Anon_2)",1,2,0,1,1,1,2,7,,2,0
+Method,"com.beust.jcommander.ParametersDelegateTest.combinedAndNestedDelegates.NestedDelegate2.(Anon_2).getFloat",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParametersDelegateTest.commandTest",,,,,,,,15,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.commandTest.Command",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.commandTest.Delegate",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.delegatingEmptyClassHasNoEffect",,,,,,,,19,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.delegatingEmptyClassHasNoEffect.EmptyDelegate",1,1,0,0,1,0,0,3,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.delegatingEmptyClassHasNoEffect.MainParams",1,4,0,0,3,0,0,8,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.delegatingSetsFieldsOnBothMainParamsAndTheDelegatedParams",,,,,,,,23,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.delegatingSetsFieldsOnBothMainParamsAndTheDelegatedParams.ComplexDelegate",1,2,0,0,2,0,0,6,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.delegatingSetsFieldsOnBothMainParamsAndTheDelegatedParams.MainParams",1,4,0,0,3,0,0,8,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.duplicateDelegateThrowDuplicateOptionException",,,,,,,,15,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.duplicateDelegateThrowDuplicateOptionException.Delegate",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.duplicateDelegateThrowDuplicateOptionException.MainParams",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.duplicateMainParametersAreNotAllowed",,,,,,,,20,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.duplicateMainParametersAreNotAllowed.Command",1,3,0,0,2,0,0,6,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.duplicateMainParametersAreNotAllowed.Delegate1",1,3,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.duplicateMainParametersAreNotAllowed.Delegate2",1,3,0,0,1,0,0,4,,1,0
+Public Static Method,"com.beust.jcommander.ParametersDelegateTest.main",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ParametersDelegateTest.mainParametersTest",,,,,,,,18,1,,
+Anonymous Class,"com.beust.jcommander.ParametersDelegateTest.mainParametersTest.(Anon_4)",1,0,0,0,0,0,0,3,,2,0
+Class,"com.beust.jcommander.ParametersDelegateTest.mainParametersTest.Command",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.mainParametersTest.Delegate",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.nullDelegatesAreProhibited",,,,,,,,11,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.nullDelegatesAreProhibited.ComplexDelegate",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.nullDelegatesAreProhibited.MainParams",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.ParametersDelegateTest.testFinalFieldAsParameterDelegate",,,,,,,,14,1,,
+Class,"com.beust.jcommander.ParametersDelegateTest.testFinalFieldAsParameterDelegate.Command",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.ParametersDelegateTest.testFinalFieldAsParameterDelegate.Delegate1",1,4,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.ParametersNotEmptyTest",1,9,0,1,0,1,1,22,,1,0
+Public Class,"com.beust.jcommander.ParametersNotEmptyTest.Args1",1,2,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.ParametersNotEmptyTest.testParameters",,,,,,,,13,2,,
+Anonymous Class,"com.beust.jcommander.ParametersNotEmptyTest.testParameters.(Anon_1)",1,0,0,0,0,0,0,4,,2,0
+Public Class,"com.beust.jcommander.PasswordTest",1,11,0,6,0,6,6,85,,1,0
+Public Interface,"com.beust.jcommander.PasswordTest.Args",0,1,2,2,0,2,2,4,,0,0
+Abstract Method,"com.beust.jcommander.PasswordTest.Args.getPassword",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.PasswordTest.Args.getPort",,,,,,,,1,0,,
+Public Static Class,"com.beust.jcommander.PasswordTest.OptionalPasswordTestingArgs",2,3,0,2,2,2,2,16,,1,50
+Public Method,"com.beust.jcommander.PasswordTest.OptionalPasswordTestingArgs.getPassword",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.PasswordTest.OptionalPasswordTestingArgs.getPort",,,,,,,,3,1,,
+Public Static Class,"com.beust.jcommander.PasswordTest.PasswordTestingArgs",2,3,0,2,2,2,2,16,,1,50
+Public Method,"com.beust.jcommander.PasswordTest.PasswordTestingArgs.getPassword",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.PasswordTest.PasswordTestingArgs.getPort",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.PasswordTest.createArgs",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.PasswordTest.passwordAsked",,,,,,,,13,1,,
+Public Method,"com.beust.jcommander.PasswordTest.passwordNotAsked",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.PasswordTest.passwordOptionalNotProvided",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.PasswordTest.passwordRequredNotProvided",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.PasswordTest.passwordWithExcessiveArity",,,,,,,,4,1,,
+Public Class,"com.beust.jcommander.PositiveIntegerTest",1,8,0,5,0,5,5,51,,1,0
+Public Method,"com.beust.jcommander.PositiveIntegerTest.validateTest",,,,,,,,9,1,,
+Class,"com.beust.jcommander.PositiveIntegerTest.validateTest.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.PositiveIntegerTest.validateTest2",,,,,,,,9,1,,
+Class,"com.beust.jcommander.PositiveIntegerTest.validateTest2.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.PositiveIntegerTest.validateTest3",,,,,,,,9,1,,
+Class,"com.beust.jcommander.PositiveIntegerTest.validateTest3.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.PositiveIntegerTest.validateTest4",,,,,,,,9,1,,
+Class,"com.beust.jcommander.PositiveIntegerTest.validateTest4.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.PositiveIntegerTest.validateTest5",,,,,,,,9,1,,
+Class,"com.beust.jcommander.PositiveIntegerTest.validateTest5.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Annotation,"com.beust.jcommander.ResourceBundle",0,1,0,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.ResourceBundle.value",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.SetConverter",2,4,0,1,0,1,1,10,,1,0
+Public Method,"com.beust.jcommander.SetConverter.convert",,,,,,,,8,2,,
+Public Class,"com.beust.jcommander.SimpleExample",1,5,0,3,1,3,3,18,,1,0
+Public Method,"com.beust.jcommander.SimpleExample.setupMain",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.SimpleExample.testLongArgs",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.SimpleExample.testShortArgs",,,,,,,,4,1,,
+Public Class,"com.beust.jcommander.StringKey",2,2,0,5,1,5,5,37,,1,0
+Public Constructor,"com.beust.jcommander.StringKey.StringKey",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.StringKey.equals",,,,,,,,15,7,,
+Public Method,"com.beust.jcommander.StringKey.getName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.StringKey.hashCode",,,,,,,,6,2,,
+Public Method,"com.beust.jcommander.StringKey.toString",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.Strings",1,3,0,0,0,4,4,30,,1,0
+Public Static Method,"com.beust.jcommander.Strings.isStringEmpty",,,,,,,,3,1,,
+Public Static Method,"com.beust.jcommander.Strings.join",,,,,,,,9,3,,
+Public Static Method,"com.beust.jcommander.Strings.join",,,,,,,,9,3,,
+Public Static Method,"com.beust.jcommander.Strings.startsWith",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.StringsTest",1,5,0,3,0,3,3,20,,1,0
+Public Method,"com.beust.jcommander.StringsTest.testArrayJoinEmptyDelimiter",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.StringsTest.testArrayJoinSpaceDelimiter",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.StringsTest.testListJoin",,,,,,,,5,1,,
+Public Annotation,"com.beust.jcommander.SubParameter",0,0,0,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.SubParameter.order",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.TypeHierarchyTest",1,6,0,1,0,1,1,79,,1,0
+Public Class,"com.beust.jcommander.TypeHierarchyTest.Base",2,1,1,2,1,2,2,10,,1,0
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Base.isAvailable",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Base.setAvailable",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.TypeHierarchyTest.Child",3,2,0,4,2,4,10,18,,3,50
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Child.getName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Child.isValidate",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Child.setName",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Child.setValidate",,,,,,,,3,1,,
+Public Interface,"com.beust.jcommander.TypeHierarchyTest.Composite",1,2,1,1,0,1,2,4,,1,0
+Abstract Method,"com.beust.jcommander.TypeHierarchyTest.Composite.setName",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.TypeHierarchyTest.IMiddle",0,1,1,1,0,1,1,4,,0,0
+Abstract Method,"com.beust.jcommander.TypeHierarchyTest.IMiddle.setCount",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.TypeHierarchyTest.IMiddleMiddle",1,1,1,1,0,1,2,4,,1,0
+Abstract Method,"com.beust.jcommander.TypeHierarchyTest.IMiddleMiddle.setCountAgain",,,,,,,,1,0,,
+Public Interface,"com.beust.jcommander.TypeHierarchyTest.Marker",0,1,1,1,0,1,1,4,,0,0
+Abstract Method,"com.beust.jcommander.TypeHierarchyTest.Marker.setAvailable",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.TypeHierarchyTest.Middle",2,1,1,4,2,4,6,18,,2,50
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Middle.getCount",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Middle.getCountAgain",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Middle.setCount",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.Middle.setCountAgain",,,,,,,,3,1,,
+Public Interface,"com.beust.jcommander.TypeHierarchyTest.Visitor",0,1,2,1,0,1,1,4,,0,0
+Abstract Method,"com.beust.jcommander.TypeHierarchyTest.Visitor.setValidate",,,,,,,,1,0,,
+Public Method,"com.beust.jcommander.TypeHierarchyTest.testTypeHierarchy",,,,,,,,10,1,,
+Public Class,"com.beust.jcommander.UnixStyleUsageFormatter",1,11,0,2,0,2,17,50,,2,0
+Public Constructor,"com.beust.jcommander.UnixStyleUsageFormatter.UnixStyleUsageFormatter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatter.appendAllParametersDetails",,,,,,,,45,16,,
+Public Class,"com.beust.jcommander.UnixStyleUsageFormatterTest",1,33,0,18,0,18,18,304,,1,0
+Private Enum Type,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum1",1,1,0,2,4,2,2,3,,1,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum1.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum1.values",,,,,,,,0,1,,
+Private Enum Type,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum2",1,1,0,2,0,2,2,2,,1,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum2.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.TestEnum2.values",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.annotationsAndDynamicParameters",,,,,,,,13,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.annotationsAndDynamicParameters.DSimple",1,3,0,0,2,0,0,6,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.doNotDisplayHelpDefaultValue",,,,,,,,14,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.doNotDisplayHelpDefaultValue.Arg",1,1,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.dontShowOptionUsageIfThereAreNoOptions",,,,,,,,15,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.dontShowOptionUsageIfThereAreNoOptions.CommandTemplate",1,3,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.emptyStringAsDefault",,,,,,,,14,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.emptyStringAsDefault.Arg",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.i18MissingKeyForCommand",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.noParseConstructor",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.nonexistentCommandShouldThrow",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.oom",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.programName",,,,,,,,10,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.testDescriptionWrappingLongWord",,,,,,,,11,2,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.testLongCommandDescription",,,,,,,,11,2,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.testLongMainParameterDescription",,,,,,,,11,2,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.testOutputFormat",,,,,,,,43,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.testOutputFormat.ArgsTemplate",1,3,0,0,10,0,0,22,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageCommandsUnderUsage",,,,,,,,24,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageCommandsUnderUsage.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageCommandsUnderUsage.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageCommandsUnderUsage.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageShouldNotChange",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithEmptyLine",,,,,,,,24,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithEmptyLine.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithEmptyLine.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithEmptyLine.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithRequiredArgsAndResourceBundle",,,,,,,,16,2,,
+Public Method,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithSubCommands",,,,,,,,27,1,,
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithSubCommands.Arg",1,0,0,0,0,0,0,2,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithSubCommands.ArgCommandA",1,2,0,0,1,0,0,4,,1,0
+Class,"com.beust.jcommander.UnixStyleUsageFormatterTest.usageWithSubCommands.ArgCommandB",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.ValidatePropertiesWhenParsingTest",1,5,0,1,0,2,2,26,,1,0
+Public Static Class,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.A",1,2,0,0,1,0,0,4,,1,0
+Public Static Class,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.B",1,3,0,0,1,0,0,4,,1,0
+Public Static Class,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.MyPathValidator",2,3,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.MyPathValidator.validate",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.f",,,,,,,,6,1,,
+Public Static Method,"com.beust.jcommander.ValidatePropertiesWhenParsingTest.main",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.VariableArityTest",1,6,0,1,0,2,2,41,,1,0
+Public Static Class,"com.beust.jcommander.VariableArityTest.ModelGenerationConfig",1,4,0,1,5,1,1,23,,1,0
+Public Method,"com.beust.jcommander.VariableArityTest.ModelGenerationConfig.print",,,,,,,,7,1,,
+Public Static Method,"com.beust.jcommander.VariableArityTest.main",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.VariableArityTest.verifyVariableArity",,,,,,,,13,1,,
+Public Class,"com.beust.jcommander.WrappedParameter",1,11,0,21,2,21,21,96,,1,40
+Public Constructor,"com.beust.jcommander.WrappedParameter.WrappedParameter",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.WrappedParameter.WrappedParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.addValue",,,,,,,,7,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.addValue",,,,,,,,20,4,,
+Public Method,"com.beust.jcommander.WrappedParameter.arity",,,,,,,,3,2,,
+Private Method,"com.beust.jcommander.WrappedParameter.callPut",,,,,,,,9,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.echoInput",,,,,,,,3,2,,
+Private Method,"com.beust.jcommander.WrappedParameter.findPut",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.getAssignment",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.getDynamicParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.getParameter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.hidden",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.isHelp",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.isNonOverwritableForced",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.WrappedParameter.names",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.order",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.password",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.required",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.validateValueWith",,,,,,,,5,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.validateWith",,,,,,,,3,2,,
+Public Method,"com.beust.jcommander.WrappedParameter.variableArity",,,,,,,,3,2,,
+Package,"com.beust.jcommander.args",,,,27,141,28,,667,,,
+Public Class,"com.beust.jcommander.args.AlternateNamesForListArgs",1,3,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.Args1",1,7,0,0,9,0,0,20,,1,0
+Public Class,"com.beust.jcommander.args.Args1Setter",1,7,0,10,9,10,10,50,,1,88
+Public Method,"com.beust.jcommander.args.Args1Setter.getParameters",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setBigDecimal",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setDate",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setDebug",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setDouble",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setFloat",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setGroups",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setLong",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setParameters",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.Args1Setter.setVerbose",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.args.Args2",1,6,0,0,5,0,0,12,,1,0
+Public Class,"com.beust.jcommander.args.ArgsArityInteger",1,2,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.ArgsArityString",1,2,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.ArgsBooleanArity",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsBooleanArity0",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsConverter",1,10,0,0,9,0,0,20,,1,0
+Public Class,"com.beust.jcommander.args.ArgsConverterFactory",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsDefault",1,5,1,0,5,0,0,12,,1,0
+Public Class,"com.beust.jcommander.args.ArgsEnum",1,9,0,0,2,1,1,16,,1,100
+Public Enum Type,"com.beust.jcommander.args.ArgsEnum.ChoiceType",1,1,0,2,3,2,2,1,,1,
+Public Method,"com.beust.jcommander.args.ArgsEnum.ChoiceType.valueOf",,,,,,,,0,1,,
+Public Method,"com.beust.jcommander.args.ArgsEnum.ChoiceType.values",,,,,,,,0,1,,
+Public Static Method,"com.beust.jcommander.args.ArgsEnum.main",,,,,,,,9,1,,
+Public Class,"com.beust.jcommander.args.ArgsEquals",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsHelp",1,1,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsI18N1",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsI18N2",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsI18N2New",1,3,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.ArgsInherited",1,2,0,0,1,0,0,4,,2,0
+Public Class,"com.beust.jcommander.args.ArgsList",1,5,0,0,5,0,0,27,,1,0
+Public Static Class,"com.beust.jcommander.args.ArgsList.SemiColonSplitter",2,3,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.args.ArgsList.SemiColonSplitter.split",,,,,,,,3,1,,
+Public Static Class,"com.beust.jcommander.args.ArgsList.UppercaseConverter",2,3,0,1,0,1,1,10,,1,0
+Public Method,"com.beust.jcommander.args.ArgsList.UppercaseConverter.convert",,,,,,,,8,2,,
+Public Class,"com.beust.jcommander.args.ArgsLongCommandDescription",1,1,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsLongDescription",1,2,0,0,5,0,0,16,,1,0
+Public Class,"com.beust.jcommander.args.ArgsLongMainParameterDescription",1,3,0,0,2,0,0,8,,1,0
+Public Class,"com.beust.jcommander.args.ArgsMainParameter1",2,3,0,1,1,1,1,7,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMainParameter1.getHostPorts",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.args.ArgsMainParameter2",2,4,0,1,1,1,1,7,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMainParameter2.getHostPorts",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.args.ArgsMainParameter3",1,3,0,2,1,2,2,10,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMainParameter3.getPath",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.ArgsMainParameter3.setPath",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.args.ArgsMaster",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsMultiValidate",1,5,0,0,1,0,0,24,,1,0
+Public Static Class,"com.beust.jcommander.args.ArgsMultiValidate.GreaterTha0ValueValidator",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMultiValidate.GreaterTha0ValueValidator.validate",,,,,,,,3,2,,
+Public Static Class,"com.beust.jcommander.args.ArgsMultiValidate.LowerThan100ValueValidator",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMultiValidate.LowerThan100ValueValidator.validate",,,,,,,,3,2,,
+Public Static Class,"com.beust.jcommander.args.ArgsMultiValidate.OddIntegerParameterValidator",2,4,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.args.ArgsMultiValidate.OddIntegerParameterValidator.validate",,,,,,,,3,2,,
+Public Class,"com.beust.jcommander.args.ArgsMultipleUnparsed",1,2,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.ArgsOutOfMemory",1,2,0,0,2,0,0,8,,1,0
+Public Class,"com.beust.jcommander.args.ArgsPassword",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsPrivate",1,2,0,1,1,1,1,7,,1,0
+Public Method,"com.beust.jcommander.args.ArgsPrivate.getVerbose",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.args.ArgsRequired",1,3,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsSlave",1,2,1,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsSlaveBogus",1,2,0,0,1,0,0,4,,2,0
+Public Class,"com.beust.jcommander.args.ArgsValidate1",1,3,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.ArgsWithSet",1,3,0,0,1,0,0,3,,1,0
+Public Class,"com.beust.jcommander.args.Arity1",1,1,0,0,1,0,0,5,,1,0
+Public Class,"com.beust.jcommander.args.CommandLineArgs",1,6,0,0,27,0,0,64,,1,0
+Public Class,"com.beust.jcommander.args.CommandLineArgs2",1,7,0,0,15,0,0,32,,1,0
+Public Class,"com.beust.jcommander.args.HiddenArgs",1,2,0,2,2,2,2,11,,1,75
+Public Constructor,"com.beust.jcommander.args.HiddenArgs.HiddenArgs",,,,,,,,2,1,,
+Private Method,"com.beust.jcommander.args.HiddenArgs.setOutput",,,,,,,,3,1,,
+Public Interface,"com.beust.jcommander.args.IHostPorts",0,1,2,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.args.IHostPorts.getHostPorts",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.args.SeparatorColon",1,1,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.args.SeparatorEqual",1,2,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.SeparatorMixed",1,3,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.SlashSeparator",1,2,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.args.VariableArity",2,4,0,2,3,2,2,13,,1,66
+Public Constructor,"com.beust.jcommander.args.VariableArity.VariableArity",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.args.VariableArity.processVariableArity",,,,,,,,3,1,,
+Package,"com.beust.jcommander.command",,,,20,11,21,,306,,,
+Public Class,"com.beust.jcommander.command.CommandAdd",1,3,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.command.CommandAliasTest",1,13,0,11,0,11,11,118,,1,0
+Public Method,"com.beust.jcommander.command.CommandAliasTest.clashingAliasesAreNotAllowed",,,,,,,,14,2,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.formattingLooksNice",,,,,,,,16,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.mainCommandReturnsNullsForGetCommandAndGetParsedAlias",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.oneCommandWithMultipleAliases_commit_ci",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.oneCommandWithMultipleAliases_commit_cmt",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.oneCommandWithSingleAlias",,,,,,,,11,1,,
+Private Method,"com.beust.jcommander.command.CommandAliasTest.patternMatchesTimes",,,,,,,,6,2,,
+Private Method,"com.beust.jcommander.command.CommandAliasTest.testCommitWithAlias",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.twoCommandsWithAliases",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.usageCanBeRetrievedWithBothCommandAndAlias",,,,,,,,15,1,,
+Public Method,"com.beust.jcommander.command.CommandAliasTest.usageDisplaysCommandWithAliasesOnlyOnce",,,,,,,,9,1,,
+Public Class,"com.beust.jcommander.command.CommandCommit",1,4,0,0,3,0,0,8,,1,0
+Public Class,"com.beust.jcommander.command.CommandHidden",1,3,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.command.CommandMain",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.command.CommandNoParametersAnnotation",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.command.CommandTest",1,17,0,9,0,10,10,113,,1,0
+Public Method,"com.beust.jcommander.command.CommandTest.commandTest1",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.commandTest2",,,,,,,,14,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.doNotValidateSubCommand",,,,,,,,8,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.hiddenCommandTest",,,,,,,,17,1,,
+Public Static Method,"com.beust.jcommander.command.CommandTest.main",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.namedCommandTest1",,,,,,,,12,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.noParametersAnnotationOnCommandTest",,,,,,,,10,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.noTrailingSpaceInUsageTest",,,,,,,,13,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.shouldComplainIfNoAnnotations",,,,,,,,6,1,,
+Public Method,"com.beust.jcommander.command.CommandTest.validateSubCommand",,,,,,,,7,1,,
+Public Class,"com.beust.jcommander.command.NamedCommandAdd",1,3,0,0,2,0,0,6,,1,0
+Package,"com.beust.jcommander.converters",,,,41,5,42,,326,,,
+Public Abstract Generic Class,"com.beust.jcommander.converters.BaseConverter",2,1,10,3,1,3,3,12,,1,33
+Public Constructor,"com.beust.jcommander.converters.BaseConverter.BaseConverter",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.converters.BaseConverter.T",1,0,0,0,0,0,0,0,,1,0
+Protected Method,"com.beust.jcommander.converters.BaseConverter.getErrorString",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.BaseConverter.getOptionName",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.BigDecimalConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.BigDecimalConverter.BigDecimalConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.BigDecimalConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.BooleanConverter",1,3,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.BooleanConverter.BooleanConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.BooleanConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.CharArrayConverter",2,1,0,1,0,1,1,4,,1,0
+Public Method,"com.beust.jcommander.converters.CharArrayConverter.convert",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.CharArrayConverterTest",1,5,0,1,0,1,1,8,,1,0
+Public Method,"com.beust.jcommander.converters.CharArrayConverterTest.testString",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.CommaParameterSplitter",2,3,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.converters.CommaParameterSplitter.split",,,,,,,,3,1,,
+Public Generic Class,"com.beust.jcommander.converters.DefaultListConverter",2,5,0,2,2,2,2,16,,1,0
+Public Constructor,"com.beust.jcommander.converters.DefaultListConverter.DefaultListConverter",,,,,,,,4,1,,
+TypeVariable,"com.beust.jcommander.converters.DefaultListConverter.T",1,0,0,0,0,0,0,0,,1,0
+Public Method,"com.beust.jcommander.converters.DefaultListConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.DoubleConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.DoubleConverter.DoubleConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.DoubleConverter.convert",,,,,,,,7,2,,
+Public Generic Class,"com.beust.jcommander.converters.EnumConverter",2,8,1,2,2,2,2,21,,1,0
+Public Constructor,"com.beust.jcommander.converters.EnumConverter.EnumConverter",,,,,,,,4,1,,
+TypeVariable,"com.beust.jcommander.converters.EnumConverter.T",1,0,0,0,0,0,0,0,,2,0
+Public Method,"com.beust.jcommander.converters.EnumConverter.convert",,,,,,,,12,3,,
+Public Class,"com.beust.jcommander.converters.FileConverter",2,2,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.converters.FileConverter.convert",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.FloatConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.FloatConverter.FloatConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.FloatConverter.convert",,,,,,,,7,2,,
+Public Interface,"com.beust.jcommander.converters.IParameterSplitter",0,2,3,1,0,1,1,3,,0,0
+Abstract Method,"com.beust.jcommander.converters.IParameterSplitter.split",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.converters.ISO8601DateConverter",1,5,0,2,0,2,5,13,,2,0
+Public Constructor,"com.beust.jcommander.converters.ISO8601DateConverter.ISO8601DateConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.ISO8601DateConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.InetAddressConverter",2,5,0,1,0,1,1,9,,1,0
+Public Method,"com.beust.jcommander.converters.InetAddressConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.InetAddressConverterTest",1,6,0,6,0,6,6,27,,1,0
+Private Method,"com.beust.jcommander.converters.InetAddressConverterTest.test",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.InetAddressConverterTest.testBlankInput",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.InetAddressConverterTest.testEmptyInput",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.InetAddressConverterTest.testGargabeInput",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.InetAddressConverterTest.testLocalhost",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.InetAddressConverterTest.testLocalhostAddress",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.IntegerConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.IntegerConverter.IntegerConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.IntegerConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.LongConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.LongConverter.LongConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.LongConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.NoConverter",2,2,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.converters.NoConverter.convert",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.PathConverter",1,6,0,2,0,3,6,24,,2,0
+Public Constructor,"com.beust.jcommander.converters.PathConverter.PathConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.PathConverter.convert",,,,,,,,8,2,,
+Private Static Method,"com.beust.jcommander.converters.PathConverter.escapeUnprintable",,,,,,,,11,3,,
+Public Class,"com.beust.jcommander.converters.StringConverter",2,1,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.converters.StringConverter.convert",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.converters.URIConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.URIConverter.URIConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.URIConverter.convert",,,,,,,,7,2,,
+Public Class,"com.beust.jcommander.converters.URLConverter",1,4,0,2,0,2,5,12,,2,0
+Public Constructor,"com.beust.jcommander.converters.URLConverter.URLConverter",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.converters.URLConverter.convert",,,,,,,,8,2,,
+Package,"com.beust.jcommander.defaultprovider",,,,9,3,9,,101,,,
+Public Class,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProvider",2,5,0,4,2,4,4,33,,1,50
+Constructor,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProvider.EnvironmentVariableDefaultProvider",,,,,,,,4,1,,
+Public Constructor,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProvider.EnvironmentVariableDefaultProvider",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProvider.EnvironmentVariableDefaultProvider",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProvider.getDefaultValueFor",,,,,,,,16,5,,
+Public Class,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProviderTest",1,5,0,1,0,1,1,17,,1,0
+Public Method,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProviderTest.shouldParseEnvironmentVariable",,,,,,,,14,1,,
+Lambda Method,"com.beust.jcommander.defaultprovider.EnvironmentVariableDefaultProviderTest.shouldParseEnvironmentVariable.(lambda_expr_1)",,,,,,,,1,1,,
+Public Class,"com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider",2,5,0,4,1,4,4,33,,1,50
+Public Constructor,"com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider.PropertyFileDefaultProvider",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider.PropertyFileDefaultProvider",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider.getDefaultValueFor",,,,,,,,8,2,,
+Private Method,"com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider.init",,,,,,,,15,3,,
+Package,"com.beust.jcommander.dynamic",,,,7,3,8,,64,,,
+Public Class,"com.beust.jcommander.dynamic.DSimple",1,3,0,0,2,0,0,6,,1,0
+Public Class,"com.beust.jcommander.dynamic.DSimpleBad",1,2,0,0,1,0,0,4,,1,0
+Public Class,"com.beust.jcommander.dynamic.DynamicParameterTest",1,10,0,7,0,8,8,40,,1,0
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.differentAssignment",,,,,,,,6,1,,
+Public Static Method,"com.beust.jcommander.dynamic.DynamicParameterTest.main",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.nonMapShouldThrow",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.dynamic.DynamicParameterTest.simple",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.simpleWithSpaces",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.simpleWithoutSpaces",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.usage",,,,,,,,7,1,,
+Public Method,"com.beust.jcommander.dynamic.DynamicParameterTest.wrongSeparatorShouldThrow",,,,,,,,4,1,,
+Package,"com.beust.jcommander.internal",,,,19,6,30,,244,,,
+Public Interface,"com.beust.jcommander.internal.Console",0,1,2,3,0,3,3,5,,0,0
+Abstract Method,"com.beust.jcommander.internal.Console.print",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.internal.Console.println",,,,,,,,1,0,,
+Abstract Method,"com.beust.jcommander.internal.Console.readPassword",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.internal.DefaultConsole",2,6,0,5,1,5,5,26,,1,19
+Public Constructor,"com.beust.jcommander.internal.DefaultConsole.DefaultConsole",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.internal.DefaultConsole.DefaultConsole",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsole.print",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsole.println",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsole.readPassword",,,,,,,,11,2,,
+Public Class,"com.beust.jcommander.internal.DefaultConsoleTest",1,5,0,1,0,1,1,47,,1,0
+Private Static Class,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream",1,3,0,5,3,5,5,27,,2,60
+Constructor,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream.StringInputStream",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream.close",,,,,,,,4,1,,
+Method,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream.isClosedCalled",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream.read",,,,,,,,6,2,,
+Method,"com.beust.jcommander.internal.DefaultConsoleTest.StringInputStream.setData",,,,,,,,4,1,,
+Public Method,"com.beust.jcommander.internal.DefaultConsoleTest.readPasswordCanBeCalledMultipleTimes",,,,,,,,18,1,,
+Public Class,"com.beust.jcommander.internal.DefaultConverterFactory",2,22,0,1,0,1,1,29,,1,0
+Public Method,"com.beust.jcommander.internal.DefaultConverterFactory.getConverter",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.internal.JDK6Console",2,5,0,4,2,4,4,30,,1,25
+Public Constructor,"com.beust.jcommander.internal.JDK6Console.JDK6Console",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.internal.JDK6Console.print",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.JDK6Console.println",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.internal.JDK6Console.readPassword",,,,,,,,16,3,,
+Public Class,"com.beust.jcommander.internal.Lists",1,5,0,0,0,6,6,20,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newArrayList",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newArrayList",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newArrayList",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newArrayList",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.internal.Lists.newArrayList.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Lists.newArrayList.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Lists.newArrayList.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Lists.newArrayList.K",1,0,0,0,0,0,0,0,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newLinkedList",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.internal.Lists.newLinkedList",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.internal.Lists.newLinkedList.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Lists.newLinkedList.K",1,0,0,0,0,0,0,0,,1,0
+Public Class,"com.beust.jcommander.internal.Maps",1,3,0,0,0,3,3,15,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Maps.newHashMap",,,,,,,,3,1,,
+Public Static Generic Method,"com.beust.jcommander.internal.Maps.newHashMap",,,,,,,,7,2,,
+TypeVariable,"com.beust.jcommander.internal.Maps.newHashMap.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Maps.newHashMap.T",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Maps.newHashMap.V",1,0,0,0,0,0,0,0,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Maps.newLinkedHashMap",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.internal.Maps.newLinkedHashMap.K",1,0,0,0,0,0,0,0,,1,0
+TypeVariable,"com.beust.jcommander.internal.Maps.newLinkedHashMap.V",1,0,0,0,0,0,0,0,,1,0
+Public Annotation,"com.beust.jcommander.internal.Nullable",0,0,0,0,0,0,0,2,,0,0
+Public Class,"com.beust.jcommander.internal.Sets",1,3,0,0,0,2,2,8,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Sets.newHashSet",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.internal.Sets.newHashSet.K",1,0,0,0,0,0,0,0,,1,0
+Public Static Generic Method,"com.beust.jcommander.internal.Sets.newLinkedHashSet",,,,,,,,3,1,,
+TypeVariable,"com.beust.jcommander.internal.Sets.newLinkedHashSet.K",1,0,0,0,0,0,0,0,,1,0
+Package,"com.beust.jcommander.parameterized",,,,0,0,0,,0,,,
+Package,"com.beust.jcommander.parameterized.parser",,,,12,11,12,,193,,,
+Public Class,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser",2,8,0,7,3,7,7,44,,1,85
+Public Constructor,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.JsonAnnotationParameterizedParser",,,,,,,,3,1,,
+Public Constructor,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.JsonAnnotationParameterizedParser",,,,,,,,3,1,,
+Public Method,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.addClassPrefix",,,,,,,,3,1,,
+Private Method,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.describeClassTree",,,,,,,,13,4,,
+Private Method,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.describeClassTree",,,,,,,,8,2,,
+Public Method,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.isPrimitiveOrString",,,,,,,,5,1,,
+Public Method,"com.beust.jcommander.parameterized.parser.JsonAnnotationParameterizedParser.setPrefixSeparator",,,,,,,,3,2,,
+Public Class,"com.beust.jcommander.parameterized.parser.JsonCommandClassExample_01",1,5,0,0,2,0,0,14,,1,0
+Public Class,"com.beust.jcommander.parameterized.parser.JsonCommandClassExample_02",1,2,0,0,2,0,0,12,,1,0
+Public Annotation,"com.beust.jcommander.parameterized.parser.MyDelegate",0,0,0,1,0,1,1,3,,0,0
+Public Abstract Method,"com.beust.jcommander.parameterized.parser.MyDelegate.delegated",,,,,,,,1,0,,
+Public Class,"com.beust.jcommander.parameterized.parser.ParameterizedParserTest",1,14,0,4,0,4,4,49,,1,0
+Public Constructor,"com.beust.jcommander.parameterized.parser.ParameterizedParserTest.ParameterizedParserTest",,,,,,,,2,1,,
+Public Method,"com.beust.jcommander.parameterized.parser.ParameterizedParserTest.jsonParameterizedParsingTest",,,,,,,,11,1,,
+Public Method,"com.beust.jcommander.parameterized.parser.ParameterizedParserTest.standardParameterizedParsingTest",,,,,,,,9,1,,
+Public Method,"com.beust.jcommander.parameterized.parser.ParameterizedParserTest.testFields",,,,,,,,11,2,,
+Public Class,"com.beust.jcommander.parameterized.parser.StandardCommandClassExample_01",1,4,0,0,2,0,0,11,,1,0
+Public Class,"com.beust.jcommander.parameterized.parser.StandardCommandClassExample_02",1,2,0,0,2,0,0,14,,1,0
+Package,"com.beust.jcommander.parser",,,,1,0,1,,10,,,
+Public Class,"com.beust.jcommander.parser.DefaultParameterizedParser",2,3,0,1,0,1,1,6,,1,0
+Public Method,"com.beust.jcommander.parser.DefaultParameterizedParser.parseArg",,,,,,,,3,1,,
+Package,"com.beust.jcommander.validators",,,,3,0,3,,29,,,
+Public Class,"com.beust.jcommander.validators.NoValidator",2,2,0,1,0,1,1,5,,1,0
+Public Method,"com.beust.jcommander.validators.NoValidator.validate",,,,,,,,3,1,,
+Public Generic Class,"com.beust.jcommander.validators.NoValueValidator",2,2,0,1,0,1,1,5,,1,0
+TypeVariable,"com.beust.jcommander.validators.NoValueValidator.T",1,0,0,0,0,0,0,0,,1,0
+Public Method,"com.beust.jcommander.validators.NoValueValidator.validate",,,,,,,,3,1,,
+Public Class,"com.beust.jcommander.validators.PositiveInteger",2,2,0,1,0,1,1,10,,1,0
+Public Method,"com.beust.jcommander.validators.PositiveInteger.validate",,,,,,,,8,2,,
+Package,"test",,,,1,2,2,,22,,,
+Public Class,"test.QuotedMainTest",1,7,0,1,2,2,2,15,,1,50
+Public Static Method,"test.QuotedMainTest.main",,,,,,,,3,1,,
+Public Method,"test.QuotedMainTest.testMain",,,,,,,,6,1,,

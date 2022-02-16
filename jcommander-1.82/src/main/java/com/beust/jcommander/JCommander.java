@@ -47,7 +47,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class JCommander {
     public static final String DEBUG_PROPERTY = "jcommander.debug";
-    
+    private final Jcommander jcommander = new Jcommander(this);
+    private final Jcommander jcommander1 = new Jcommander(this);
+
     protected IParameterizedParser parameterizedParser = new DefaultParameterizedParser();
 
     /**
@@ -59,6 +61,30 @@ public class JCommander {
      * The objects that contain fields annotated with @Parameter.
      */
     private List<Object> objects = Lists.newArrayList();
+
+    public String getParsedCommand() {
+        return parsedCommand;
+    }
+
+    public List<Object> getObjects() {
+        return objects;
+    }
+
+    public List<String> getUnknownArgs() {
+        return unknownArgs;
+    }
+
+    public Map<IKey, ProgramName> getAliasMap() {
+        return aliasMap;
+    }
+
+    public String getParsedAlias() {
+        return parsedAlias;
+    }
+
+    public Map<ProgramName, JCommander> getCommands() {
+        return commands;
+    }
 
     /**
      * Description of a main parameter, which can be either a list of string or a single field. Both
@@ -339,7 +365,7 @@ public class JCommander {
      */
     public void parse(String... args) {
         try {
-            parse(true /* validate */, args);
+            jcommander.parse(true /* validate */, args);
         } catch(ParameterException ex) {
             ex.setJCommander(this);
             throw ex;
@@ -350,18 +376,18 @@ public class JCommander {
      * Parse the command line parameters without validating them.
      */
     public void parseWithoutValidation(String... args) {
-        parse(false /* no validation */, args);
+        jcommander.parse(false /* no validation */, args);
     }
 
     private void parse(boolean validate, String... args) {
-        StringBuilder sb = new StringBuilder("Parsing \"");
-        sb.append(Strings.join(" ", args)).append("\"\n  with:").append(Strings.join(" ", objects.toArray()));
-        p(sb.toString());
 
-        if (descriptions == null) createDescriptions();
-        initializeDefaultValues();
-        parseValues(expandArgs(args), validate);
-        if (validate) validateOptions();
+        // This boolean becomes true if we encounter a command, which indicates we need
+        // to stop parsing (the parsing of the command will be done in a sub JCommander
+        // object)
+
+        // Mark the parameter descriptions held in fields as assigned
+
+        jcommander.parse(validate, args);
     }
 
     private void initializeDefaultValues() {
@@ -581,17 +607,6 @@ public class JCommander {
     }
 
     /**
-     * Remove spaces at both ends and handle double quotes.
-     */
-    private static String trim(String string) {
-        String result = string.trim();
-        if (result.startsWith("\"") && result.endsWith("\"") && result.length() > 1) {
-            result = result.substring(1, result.length() - 1);
-        }
-        return result;
-    }
-
-    /**
      * Create the ParameterDescriptions for all the \@Parameter found.
      */
     public void createDescriptions() {
@@ -684,141 +699,8 @@ public class JCommander {
         }
     }
 
-    /**
-     * Main method that parses the values and initializes the fields accordingly.
-     */
-    private void parseValues(String[] args, boolean validate) {
-        // This boolean becomes true if we encounter a command, which indicates we need
-        // to stop parsing (the parsing of the command will be done in a sub JCommander
-        // object)
-        boolean commandParsed = false;
-        int i = 0;
-        boolean isDashDash = false; // once we encounter --, everything goes into the main parameter
-        while (i < args.length && !commandParsed) {
-            String arg = args[i];
-            String a = trim(arg);
-            args[i] = a;
-            p("Parsing arg: " + a);
-
-            JCommander jc = findCommandByAlias(arg);
-            int increment = 1;
-            if (!isDashDash && !"--".equals(a) && isOption(a) && jc == null) {
-                //
-                // Option
-                //
-                ParameterDescription pd = findParameterDescription(a);
-
-                if (pd != null) {
-                    if (pd.getParameter().password()) {
-                        increment = processPassword(args, i, pd, validate);
-                    } else {
-                        if (pd.getParameter().variableArity()) {
-                            //
-                            // Variable arity?
-                            //
-                            increment = processVariableArity(args, i, pd, validate);
-                        } else {
-                            //
-                            // Regular option
-                            //
-                            Class<?> fieldType = pd.getParameterized().getType();
-
-                            // Boolean, set to true as soon as we see it, unless it specified
-                            // an arity of 1, in which case we need to read the next value
-                            if (pd.getParameter().arity() == -1 && isBooleanType(fieldType)) {
-                                handleBooleanOption(pd, fieldType);
-                            } else {
-                                increment = processFixedArity(args, i, pd, validate, fieldType);
-                            }
-                            // If it's a help option, remember for later
-                            if (pd.isHelp()) {
-                                helpWasSpecified = true;
-                            }
-                        }
-                    }
-                } else {
-                    if (options.acceptUnknownOptions) {
-                        unknownArgs.add(arg);
-                        i++;
-                        while (i < args.length && !isOption(args[i])) {
-                            unknownArgs.add(args[i++]);
-                        }
-                        increment = 0;
-                    } else {
-                        throw new ParameterException("Unknown option: " + arg);
-                    }
-                }
-            } else {
-                //
-                // Main parameter
-                //
-                if ("--".equals(arg) && !isDashDash) {
-                    isDashDash = true;
-                }
-                else if (commands.isEmpty()) {
-                    //
-                    // Regular (non-command) parsing
-                    //
-                    initMainParameterValue(arg);
-                    String value = a; // If there's a non-quoted version, prefer that one
-                    Object convertedValue = value;
-
-                    // Fix
-                    // Main parameter doesn't support Converter
-                    // https://github.com/cbeust/jcommander/issues/380
-                    if (mainParameter.annotation.converter() != null && mainParameter.annotation.converter() != NoConverter.class){
-                        convertedValue = convertValue(mainParameter.parameterized, mainParameter.parameterized.getType(), null, value);
-                    }
-
-                    Type genericType = mainParameter.parameterized.getGenericType();
-                    if (genericType instanceof ParameterizedType) {
-                        ParameterizedType p = (ParameterizedType) genericType;
-                        Type cls = p.getActualTypeArguments()[0];
-                        if (cls instanceof Class) {
-                            convertedValue = convertValue(mainParameter.parameterized, (Class) cls, null, value);
-                        }
-                    }
-
-                    for(final Class<? extends IParameterValidator> validator : mainParameter.annotation.validateWith()
-                            ) {
-                        mainParameter.description.validateParameter(validator,
-                            "Default", value);
-                    }
-
-                    mainParameter.description.setAssigned(true);
-                    mainParameter.addValue(convertedValue);
-                } else {
-                    //
-                    // Command parsing
-                    //
-                    if (jc == null && validate) {
-                        throw new MissingCommandException("Expected a command, got " + arg, arg);
-                    } else if (jc != null) {
-                        parsedCommand = jc.programName.name;
-                        parsedAlias = arg; //preserve the original form
-
-                        // Found a valid command, ask it to parse the remainder of the arguments.
-                        // Setting the boolean commandParsed to true will force the current
-                        // loop to end.
-                        jc.parse(validate, subArray(args, i + 1));
-                        commandParsed = true;
-                    }
-                }
-            }
-            i += increment;
-        }
-
-        // Mark the parameter descriptions held in fields as assigned
-        for (ParameterDescription parameterDescription : descriptions.values()) {
-            if (parameterDescription.isAssigned()) {
-                fields.get(parameterDescription.getParameterized()).setAssigned(true);
-            }
-        }
-
-    }
-
     private boolean isBooleanType(Class<?> fieldType) {
-      return Boolean.class.isAssignableFrom(fieldType) || boolean.class.isAssignableFrom(fieldType);
+        return jcommander1.isBooleanType(fieldType);
     }
 
     private void handleBooleanOption(ParameterDescription pd, Class<?> fieldType) {
@@ -830,6 +712,359 @@ public class JCommander {
           pd.addValue("true");
       }
       requiredFields.remove(pd.getParameterized());
+    }
+
+    public static class Jcommander {
+        private final com.beust.jcommander.JCommander JCommander;
+
+        public Jcommander(com.beust.jcommander.JCommander JCommander) {
+            this.JCommander = JCommander;
+        }
+
+        private void parse(boolean validate, String... args) {
+            StringBuilder sb = new StringBuilder("Parsing \"");
+            sb.append(Strings.join(" ", args)).append("\"\n  with:").append(Strings.join(" ", JCommander.getObjects().toArray()));
+            JCommander.p(sb.toString());
+
+            if (JCommander.getDescriptions() == null) JCommander.createDescriptions();
+            JCommander.initializeDefaultValues();
+            String[] args1 = JCommander.expandArgs(args);
+            // This boolean becomes true if we encounter a command, which indicates we need
+            // to stop parsing (the parsing of the command will be done in a sub JCommander
+            // object)
+            boolean commandParsed = false;
+            int i = 0;
+            boolean isDashDash = false; // once we encounter --, everything goes into the main parameter
+            while (i < args1.length && !commandParsed) {
+                String arg = args1[i];
+                String a = com.beust.jcommander.JCommander.trim(arg);
+                args1[i] = a;
+                JCommander.p("Parsing arg: " + a);
+
+                com.beust.jcommander.JCommander jc = JCommander.findCommandByAlias(arg);
+                int increment = 1;
+                if (!isDashDash && !"--".equals(a) && JCommander.isOption(a) && jc == null) {
+                    //
+                    // Option
+                    //
+                    ParameterDescription pd = JCommander.findParameterDescription(a);
+
+                    if (pd != null) {
+                        if (pd.getParameter().password()) {
+                            increment = JCommander.processPassword(args1, i, pd, validate);
+                        } else {
+                            if (pd.getParameter().variableArity()) {
+                                //
+                                // Variable arity?
+                                //
+                                increment = JCommander.processVariableArity(args1, i, pd, validate);
+                            } else {
+                                //
+                                // Regular option
+                                //
+                                Class<?> fieldType = pd.getParameterized().getType();
+
+                                // Boolean, set to true as soon as we see it, unless it specified
+                                // an arity of 1, in which case we need to read the next value
+                                if (pd.getParameter().arity() == -1 && JCommander.isBooleanType(fieldType)) {
+                                    JCommander.handleBooleanOption(pd, fieldType);
+                                } else {
+                                    increment = JCommander.processFixedArity(args1, i, pd, validate, fieldType);
+                                }
+                                // If it's a help option, remember for later
+                                if (pd.isHelp()) {
+                                    JCommander.setHelpWasSpecified(true);
+                                }
+                            }
+                        }
+                    } else {
+                        if (JCommander.getOptions().acceptUnknownOptions) {
+                            JCommander.getUnknownArgs().add(arg);
+                            i++;
+                            while (i < args1.length && !JCommander.isOption(args1[i])) {
+                                JCommander.getUnknownArgs().add(args1[i++]);
+                            }
+                            increment = 0;
+                        } else {
+                            throw new ParameterException("Unknown option: " + arg);
+                        }
+                    }
+                } else {
+                    //
+                    // Main parameter
+                    //
+                    if ("--".equals(arg) && !isDashDash) {
+                        isDashDash = true;
+                    } else if (JCommander.getCommands().isEmpty()) {
+                        //
+                        // Regular (non-command) parsing
+                        //
+                        JCommander.initMainParameterValue(arg);
+                        String value = a; // If there's a non-quoted version, prefer that one
+                        Object convertedValue = value;
+
+                        // Fix
+                        // Main parameter doesn't support Converter
+                        // https://github.com/cbeust/jcommander/issues/380
+                        if (JCommander.getMainParameter().annotation.converter() != null && JCommander.getMainParameter().annotation.converter() != NoConverter.class) {
+                            convertedValue = JCommander.convertValue(JCommander.getMainParameter().parameterized, JCommander.getMainParameter().parameterized.getType(), null, value);
+                        }
+
+                        Type genericType = JCommander.getMainParameter().parameterized.getGenericType();
+                        if (genericType instanceof ParameterizedType) {
+                            ParameterizedType p = (ParameterizedType) genericType;
+                            Type cls = p.getActualTypeArguments()[0];
+                            if (cls instanceof Class) {
+                                convertedValue = JCommander.convertValue(JCommander.getMainParameter().parameterized, (Class) cls, null, value);
+                            }
+                        }
+
+                        for (final Class<? extends IParameterValidator> validator : JCommander.getMainParameter().annotation.validateWith()
+                        ) {
+                            JCommander.getMainParameter().description.validateParameter(validator,
+                                    "Default", value);
+                        }
+
+                        JCommander.getMainParameter().description.setAssigned(true);
+                        JCommander.getMainParameter().addValue(convertedValue);
+                    } else {
+                        //
+                        // Command parsing
+                        //
+                        if (jc == null && validate) {
+                            throw new MissingCommandException("Expected a command, got " + arg, arg);
+                        } else if (jc != null) {
+                            JCommander.setParsedCommand(jc.programName.name);
+                            JCommander.setParsedAlias(arg); //preserve the original form
+
+                            // Found a valid command, ask it to parse the remainder of the arguments.
+                            // Setting the boolean commandParsed to true will force the current
+                            // loop to end.
+                            jc.parse(validate, JCommander.subArray(args1, i + 1));
+                            commandParsed = true;
+                        }
+                    }
+                }
+                i += increment;
+            }
+
+            // Mark the parameter descriptions held in fields as assigned
+            for (ParameterDescription parameterDescription : JCommander.getDescriptions().values()) {
+                if (parameterDescription.isAssigned()) {
+                    JCommander.getFields().get(parameterDescription.getParameterized()).setAssigned(true);
+                }
+            }
+
+            if (validate) JCommander.validateOptions();
+        }
+    }
+
+    public static class Jcommander {
+        private final com.beust.jcommander.JCommander JCommander;
+
+        public Jcommander(com.beust.jcommander.JCommander JCommander) {
+            this.JCommander = JCommander;
+        }
+
+        /**
+         * Remove spaces at both ends and handle double quotes.
+         */
+        public static String trim(String string) {
+            String result = string.trim();
+            if (result.startsWith("\"") && result.endsWith("\"") && result.length() > 1) {
+                result = result.substring(1, result.length() - 1);
+            }
+            return result;
+        }
+
+        public boolean isBooleanType(Class<?> fieldType) {
+            return Boolean.class.isAssignableFrom(fieldType) || boolean.class.isAssignableFrom(fieldType);
+        }
+
+        public final int determineArity(String[] args, int index, ParameterDescription pd, IVariableArity va) {
+            List<String> currentArgs = Lists.newArrayList();
+            for (int j = index + 1; j < args.length; j++) {
+                currentArgs.add(args[j]);
+            }
+            return va.processVariableArity(pd.getParameter().names()[0],
+                    currentArgs.toArray(new String[0]));
+        }
+
+        public String[] subArray(String[] args, int index) {
+            int l = args.length - index;
+            String[] result = new String[l];
+            System.arraycopy(args, index, result, 0, l);
+
+            return result;
+        }
+
+        public static com.beust.jcommander.JCommander.Builder newBuilder() {
+            return new com.beust.jcommander.JCommander.Builder();
+        }
+
+        public static <T> T instantiateConverter(String optionName, Class<? extends T> converterClass)
+                throws InstantiationException, IllegalAccessException,
+                InvocationTargetException {
+            Constructor<T> ctor = null;
+            Constructor<T> stringCtor = null;
+            for (Constructor<T> c : (Constructor<T>[]) converterClass.getDeclaredConstructors()) {
+                c.setAccessible(true);
+                Class<?>[] types = c.getParameterTypes();
+                if (types.length == 1 && types[0].equals(String.class)) {
+                    stringCtor = c;
+                } else if (types.length == 0) {
+                    ctor = c;
+                }
+            }
+
+            return stringCtor != null
+                    ? stringCtor.newInstance(optionName)
+                    : ctor != null
+                    ? ctor.newInstance()
+                    : null;
+        }
+
+        /**
+         * Add a command object.
+         */
+        public void addCommand(String name, Object object) {
+            addCommand(name, object, new String[0]);
+        }
+
+        public void addCommand(Object object) {
+            Parameters p = object.getClass().getAnnotation(Parameters.class);
+            if (p != null && p.commandNames().length > 0) {
+                for (String commandName : p.commandNames()) {
+                    addCommand(commandName, object);
+                }
+            } else {
+                throw new ParameterException("Trying to add command " + object.getClass().getName()
+                        + " without specifying its names in @Parameters");
+            }
+        }
+
+        /**
+         * Add a command object and its aliases.
+         */
+        public void addCommand(String name, Object object, String... aliases) {
+            com.beust.jcommander.JCommander jc = new com.beust.jcommander.JCommander(JCommander.getOptions());
+            jc.addObject(object);
+            jc.createDescriptions();
+            jc.setProgramName(name, aliases);
+            com.beust.jcommander.JCommander.ProgramName progName = jc.programName;
+            JCommander.getCommands().put(progName, jc);
+
+            /*
+             * Register aliases
+             */
+            //register command name as an alias of itself for reverse lookup
+            //Note: Name clash check is intentionally omitted to resemble the
+            //     original behaviour of clashing commands.
+            //     Aliases are, however, are strictly checked for name clashes.
+            JCommander.getAliasMap().put(new StringKey(name), progName);
+            for (String a : aliases) {
+                IKey alias = new StringKey(a);
+                //omit pointless aliases to avoid name clash exception
+                if (!alias.equals(name)) {
+                    com.beust.jcommander.JCommander.ProgramName mappedName = JCommander.getAliasMap().get(alias);
+                    if (mappedName != null && !mappedName.equals(progName)) {
+                        throw new ParameterException("Cannot set alias " + alias
+                                + " for " + name
+                                + " command because it has already been defined for "
+                                + mappedName.name + " command");
+                    }
+                    JCommander.getAliasMap().put(alias, progName);
+                }
+            }
+        }
+
+        public Map<String, JCommander> getCommands() {
+            Map<String, JCommander> res = Maps.newLinkedHashMap();
+
+            for (Map.Entry<ProgramName, JCommander> entry : JCommander.getCommands().entrySet()) {
+                res.put(entry.getKey().name, entry.getValue());
+            }
+            return res;
+        }
+
+        public Map<ProgramName, JCommander> getRawCommands() {
+            Map<ProgramName, JCommander> res = Maps.newLinkedHashMap();
+
+            for (Map.Entry<ProgramName, JCommander> entry : JCommander.getCommands().entrySet()) {
+                res.put(entry.getKey(), entry.getValue());
+            }
+            return res;
+        }
+
+        public String getParsedCommand() {
+            return JCommander.getParsedCommand();
+        }
+
+        /**
+         * The name of the command or the alias in the form it was
+         * passed to the command line. <code>null</code> if no
+         * command or alias was specified.
+         *
+         * @return Name of command or alias passed to command line. If none passed: <code>null</code>.
+         */
+        public String getParsedAlias() {
+            return JCommander.getParsedAlias();
+        }
+
+        /**
+         * @return n spaces
+         */
+        public String s(int count) {
+            StringBuilder result = new StringBuilder();
+            for (int i = 0; i < count; i++) {
+                result.append(" ");
+            }
+
+            return result.toString();
+        }
+
+        /**
+         * @return the objects that JCommander will fill with the result of
+         * parsing the command line.
+         */
+        public List<Object> getObjects() {
+            return JCommander.getObjects();
+        }
+
+        public ParameterDescription findParameterDescription(String arg) {
+            return FuzzyMap.findInMap(JCommander.getDescriptions(), new StringKey(arg),
+                    JCommander.getOptions().caseSensitiveOptions, JCommander.getOptions().allowAbbreviatedOptions);
+        }
+
+        private com.beust.jcommander.JCommander findCommand(com.beust.jcommander.JCommander.ProgramName name) {
+            return FuzzyMap.findInMap(JCommander.getCommands(), name,
+                    JCommander.getOptions().caseSensitiveOptions, JCommander.getOptions().allowAbbreviatedOptions);
+        }
+
+        public com.beust.jcommander.JCommander.ProgramName findProgramName(String name) {
+            return FuzzyMap.findInMap(JCommander.getAliasMap(), new StringKey(name),
+                    JCommander.getOptions().caseSensitiveOptions, JCommander.getOptions().allowAbbreviatedOptions);
+        }
+
+        public void setVerbose(int verbose) {
+            JCommander.getOptions().verbose = verbose;
+        }
+
+        public void setCaseSensitiveOptions(boolean b) {
+            JCommander.getOptions().caseSensitiveOptions = b;
+        }
+
+        public void setAllowAbbreviatedOptions(boolean b) {
+            JCommander.getOptions().allowAbbreviatedOptions = b;
+        }
+
+        public void setAcceptUnknownOptions(boolean b) {
+            JCommander.getOptions().acceptUnknownOptions = b;
+        }
+
+        public List<String> getUnknownOptions() {
+            return JCommander.getUnknownArgs();
+        }
     }
 
     private class DefaultVariableArity implements IVariableArity {
@@ -847,19 +1082,14 @@ public class JCommander {
     private final IVariableArity DEFAULT_VARIABLE_ARITY = new DefaultVariableArity();
 
     private final int determineArity(String[] args, int index, ParameterDescription pd, IVariableArity va) {
-        List<String> currentArgs = Lists.newArrayList();
-        for (int j = index + 1; j < args.length; j++) {
-            currentArgs.add(args[j]);
-        }
-        return va.processVariableArity(pd.getParameter().names()[0],
-                currentArgs.toArray(new String[0]));
+        return jcommander1.determineArity(args, index, pd, va);
     }
 
     /**
      * @return the number of options that were processed.
      */
     private int processPassword(String[] args, int index, ParameterDescription pd, boolean validate) {
-        final int passwordArity = determineArity(args, index, pd, DEFAULT_VARIABLE_ARITY);
+        final int passwordArity = jcommander1.determineArity(args, index, pd, DEFAULT_VARIABLE_ARITY);
         if (passwordArity == 0) {
             // password option with password not specified, use the Console to retrieve the password
             char[] password = readPassword(pd.getDescription(), pd.getParameter().echoInput());
@@ -886,7 +1116,7 @@ public class JCommander {
             va = (IVariableArity) arg;
         }
 
-        int arity = determineArity(args, index, pd, va);
+        int arity = jcommander1.determineArity(args, index, pd, va);
         int result = processFixedArity(args, index, pd, validate, List.class, arity);
         return result;
     }
@@ -906,7 +1136,7 @@ public class JCommander {
         int index = originalIndex;
         String arg = args[index];
         // Special case for boolean parameters of arity 0
-        if (arity == 0 && isBooleanType(fieldType)) {
+        if (arity == 0 && jcommander1.isBooleanType(fieldType)) {
             handleBooleanOption(pd, fieldType);
         } else if (arity == 0) {
             throw new ParameterException("Expected a value after parameter " + arg);
@@ -945,11 +1175,8 @@ public class JCommander {
     }
 
     private String[] subArray(String[] args, int index) {
-        int l = args.length - index;
-        String[] result = new String[l];
-        System.arraycopy(args, index, result, 0, l);
 
-        return result;
+        return jcommander1.subArray(args, index);
     }
 
     /**
@@ -1062,10 +1289,6 @@ public class JCommander {
 
     public MainParameter getMainParameter() {
         return mainParameter;
-    }
-
-    public static Builder newBuilder() {
-        return new Builder();
     }
 
     public static class Builder {
@@ -1268,7 +1491,7 @@ public class JCommander {
                     if(optionName == null) {
                         optionName = parameter.names().length > 0 ? parameter.names()[0] : "[Main class]";
                     }
-                    return converterClass != null ? instantiateConverter(optionName, converterClass) : null;
+                    return converterClass != null ? Jcommander.instantiateConverter(optionName, converterClass) : null;
                 } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
                     throw new ParameterException(e);
                 }
@@ -1345,108 +1568,50 @@ public class JCommander {
             return null;
         }
         try {
-            return instantiateConverter(optionName, converterClass);
+            return Jcommander.instantiateConverter(optionName, converterClass);
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException ignore) {
             return null;
         }
-    }
-
-    private static <T> T instantiateConverter(String optionName, Class<? extends T> converterClass)
-            throws InstantiationException, IllegalAccessException,
-            InvocationTargetException {
-        Constructor<T> ctor = null;
-        Constructor<T> stringCtor = null;
-        for (Constructor<T> c : (Constructor<T>[]) converterClass.getDeclaredConstructors()) {
-            c.setAccessible(true);
-            Class<?>[] types = c.getParameterTypes();
-            if (types.length == 1 && types[0].equals(String.class)) {
-                stringCtor = c;
-            } else if (types.length == 0) {
-                ctor = c;
-            }
-        }
-
-        return stringCtor != null
-                ? stringCtor.newInstance(optionName)
-                : ctor != null
-                ? ctor.newInstance()
-                : null;
     }
 
     /**
      * Add a command object.
      */
     public void addCommand(String name, Object object) {
-        addCommand(name, object, new String[0]);
+        jcommander1.addCommand(name, object);
     }
 
     public void addCommand(Object object) {
-        Parameters p = object.getClass().getAnnotation(Parameters.class);
-        if (p != null && p.commandNames().length > 0) {
-            for (String commandName : p.commandNames()) {
-                addCommand(commandName, object);
-            }
-        } else {
-            throw new ParameterException("Trying to add command " + object.getClass().getName()
-                    + " without specifying its names in @Parameters");
-        }
+        jcommander1.addCommand(object);
     }
 
     /**
      * Add a command object and its aliases.
      */
     public void addCommand(String name, Object object, String... aliases) {
-        JCommander jc = new JCommander(options);
-        jc.addObject(object);
-        jc.createDescriptions();
-        jc.setProgramName(name, aliases);
-        ProgramName progName = jc.programName;
-        commands.put(progName, jc);
 
-    /*
+        /*
     * Register aliases
     */
         //register command name as an alias of itself for reverse lookup
         //Note: Name clash check is intentionally omitted to resemble the
         //     original behaviour of clashing commands.
         //     Aliases are, however, are strictly checked for name clashes.
-        aliasMap.put(new StringKey(name), progName);
-        for (String a : aliases) {
-            IKey alias = new StringKey(a);
-            //omit pointless aliases to avoid name clash exception
-            if (!alias.equals(name)) {
-                ProgramName mappedName = aliasMap.get(alias);
-                if (mappedName != null && !mappedName.equals(progName)) {
-                    throw new ParameterException("Cannot set alias " + alias
-                            + " for " + name
-                            + " command because it has already been defined for "
-                            + mappedName.name + " command");
-                }
-                aliasMap.put(alias, progName);
-            }
-        }
+        jcommander1.addCommand(name, object, aliases);
     }
 
     public Map<String, JCommander> getCommands() {
-        Map<String, JCommander> res = Maps.newLinkedHashMap();
 
-        for (Map.Entry<ProgramName, JCommander> entry : commands.entrySet()) {
-            res.put(entry.getKey().name, entry.getValue());
-        }
-        return res;
+        return jcommander1.getCommands();
     }
 
     public Map<ProgramName, JCommander> getRawCommands() {
-        Map<ProgramName, JCommander> res = Maps.newLinkedHashMap();
 
-        for (Map.Entry<ProgramName, JCommander> entry : commands.entrySet()) {
-            res.put(entry.getKey(), entry.getValue());
-        }
-        return res;
+        return jcommander1.getRawCommands();
     }
 
     public String getParsedCommand() {
-        return parsedCommand;
+        return jcommander1.getParsedCommand();
     }
 
     /**
@@ -1457,19 +1622,15 @@ public class JCommander {
      * @return Name of command or alias passed to command line. If none passed: <code>null</code>.
      */
     public String getParsedAlias() {
-        return parsedAlias;
+        return jcommander1.getParsedAlias();
     }
 
     /**
      * @return n spaces
      */
     private String s(int count) {
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < count; i++) {
-            result.append(" ");
-        }
 
-        return result.toString();
+        return jcommander1.s(count);
     }
 
     /**
@@ -1477,33 +1638,30 @@ public class JCommander {
      * parsing the command line.
      */
     public List<Object> getObjects() {
-        return objects;
+        return jcommander1.getObjects();
     }
 
     private ParameterDescription findParameterDescription(String arg) {
-        return FuzzyMap.findInMap(descriptions, new StringKey(arg),
-                options.caseSensitiveOptions, options.allowAbbreviatedOptions);
+        return jcommander1.findParameterDescription(arg);
     }
 
     private JCommander findCommand(ProgramName name) {
-        return FuzzyMap.findInMap(commands, name,
-                options.caseSensitiveOptions, options.allowAbbreviatedOptions);
+        return jcommander1.findCommand(name);
     }
 
     private ProgramName findProgramName(String name) {
-        return FuzzyMap.findInMap(aliasMap, new StringKey(name),
-                options.caseSensitiveOptions, options.allowAbbreviatedOptions);
+        return jcommander1.findProgramName(name);
     }
 
     /*
     * Reverse lookup JCommand object by command's name or its alias
     */
     public JCommander findCommandByAlias(String commandOrAlias) {
-        ProgramName progName = findProgramName(commandOrAlias);
+        ProgramName progName = jcommander1.findProgramName(commandOrAlias);
         if (progName == null) {
             return null;
         }
-        JCommander jc = findCommand(progName);
+        JCommander jc = jcommander1.findCommand(progName);
         if (jc == null) {
             throw new IllegalStateException(
                     "There appears to be inconsistency in the internal command database. " +
@@ -1583,23 +1741,23 @@ public class JCommander {
     }
 
     public void setVerbose(int verbose) {
-        options.verbose = verbose;
+        jcommander1.setVerbose(verbose);
     }
 
     public void setCaseSensitiveOptions(boolean b) {
-        options.caseSensitiveOptions = b;
+        jcommander1.setCaseSensitiveOptions(b);
     }
 
     public void setAllowAbbreviatedOptions(boolean b) {
-        options.allowAbbreviatedOptions = b;
+        jcommander1.setAllowAbbreviatedOptions(b);
     }
 
     public void setAcceptUnknownOptions(boolean b) {
-        options.acceptUnknownOptions = b;
+        jcommander1.setAcceptUnknownOptions(b);
     }
 
     public List<String> getUnknownOptions() {
-        return unknownArgs;
+        return jcommander1.getUnknownOptions();
     }
 
     public void setAllowParameterOverwriting(boolean b) {
